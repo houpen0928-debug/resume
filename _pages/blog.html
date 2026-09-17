@@ -1,0 +1,23 @@
+---
+layout: single
+title: "Jason 的工作日誌"
+permalink: /blog/
+lang: zh-TW
+locale: zh-TW
+author_profile: true
+resume_style: true
+zh_url: /blog/
+en_url: /en/blog/
+---
+<p>記錄製造管理、AI 應用與持續學習。文章依原文語言呈現。</p>
+<p><a class="btn" href="{{ "/blog/write/" | relative_url }}">撰寫日誌 · Jason</a></p>
+{% assign entries = site.journal | sort: "date" | reverse %}
+{% for entry in entries %}
+<article class="executive-role">
+<h2><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></h2>
+<p class="executive-date"><time datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%Y-%m-%d" }}</time> · Jason Hung · {{ entry.lang }}</p>
+<p>{{ entry.description | escape }}</p>
+</article>
+{% else %}
+<p>尚無日誌，歡迎日後回來閱讀 Jason 的更新。</p>
+{% endfor %}

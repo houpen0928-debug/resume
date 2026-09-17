@@ -85,3 +85,12 @@ assert all(s in research for s in ('104,800', 'not realized savings', 'Morris Fa
 english_cv = (root / 'en/cv/index.html').read_text(encoding='utf-8')
 assert all(s in english_cv for s in ('window.print()', '2026-08', 'RMB 2M+', 'estimated benefit', 'Executive MBA'))
 print('Bilingual routes, reciprocal switches, metadata, chronology and research attribution: PASS')
+
+for route in ('blog/index.html', 'en/blog/index.html', 'blog/write/index.html', 'blog/2026-09-17-website-update/index.html'):
+    html = (root / route).read_text(encoding='utf-8')
+    assert 'Jason' in html, route
+    assert 'Blog Post number' not in html, route
+assert '2026-09-17-website-update' in (root / 'blog/index.html').read_text(encoding='utf-8')
+assert '2026-09-17-website-update' in (root / 'en/blog/index.html').read_text(encoding='utf-8')
+assert (root / 'assets/js/journal-editor.js').exists()
+print('Blog lists, author form and journal route: PASS')

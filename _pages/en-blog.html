@@ -1,0 +1,25 @@
+---
+layout: single
+title: "Jason’s Blog"
+permalink: /en/blog/
+lang: en
+locale: en
+author_profile: true
+resume_style: true
+zh_url: /blog/
+en_url: /en/blog/
+author: jason_en
+site_title: "Jason Hung | Plant Operations"
+---
+<p>Notes on manufacturing leadership, AI applications and ongoing learning. Posts are shown in their original language.</p>
+<p><a class="btn" href="{{ "/blog/write/" | relative_url }}">Write a post · Jason</a></p>
+{% assign entries = site.journal | sort: "date" | reverse %}
+{% for entry in entries %}
+<article class="executive-role">
+<h2><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></h2>
+<p class="executive-date"><time datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%Y-%m-%d" }}</time> · Jason Hung · {{ entry.lang }}</p>
+<p>{{ entry.description | escape }}</p>
+</article>
+{% else %}
+<p>No posts yet. Check back for Jason’s updates.</p>
+{% endfor %}
