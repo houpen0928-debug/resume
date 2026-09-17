@@ -10,6 +10,16 @@
   <h3>{{ award.title }}</h3>
   <p class="executive-date">{{ award.date }}</p>
   <p>{{ award.summary }}</p>
-  <p><a href="{{ award.source }}">{{ award.sourceLabel }}</a></p>
+  {% if award.source %}<p><a href="{{ award.source }}">{{ award.sourceLabel }}</a></p>{% endif %}
+  {% if award.images %}
+  <div class="award-gallery">
+    {% for image in award.images %}
+    <figure>
+      <a href="{{ image.path | relative_url }}"><img src="{{ image.path | relative_url }}" alt="{{ image.caption }}" loading="lazy"></a>
+      <figcaption>{{ image.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% endif %}
 </section>
 {% endfor %}

@@ -23,3 +23,10 @@ body {margin-bottom: 0 !important;}
 .resume-language-switch a:focus-visible {outline:3px solid #d59729; outline-offset:3px;}
 .executive-role[id], .page__content h2[id] {scroll-margin-top:6rem;}
 @media print {.resume-language-switch {display:none;}}
+
+.award-gallery {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start;}
+.award-gallery figure {display:block; margin:0; min-width:0;}
+.award-gallery img {display:block; width:100%; height:auto; border-radius:6px;}
+.award-gallery figcaption {font-size:0.75em; margin-top:0.5em;}
+@media (max-width:600px) {.award-gallery {grid-template-columns:1fr;}}
+@media print {.award-gallery {break-inside:avoid;} .award-gallery img {max-height:180px; width:auto; max-width:100%;}}
