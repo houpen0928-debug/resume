@@ -3,4 +3,11 @@ layout: single
 ---
 <p class="executive-date">Jason Hung · {{ page.date | date: "%Y-%m-%d" }}</p>
 {{ content }}
+{% if page.attachments %}
+<h2>{% if page.lang == 'en' %}Attachments{% else %}附件{% endif %}</h2>
+{% for attachment in page.attachments %}
+<p><a href="{{ attachment.url | relative_url }}" download>{{ attachment.name | escape }}</a></p>
+{% if attachment.image %}<p><a href="{{ attachment.url | relative_url }}"><img src="{{ attachment.url | relative_url }}" alt="{{ attachment.name | escape }}" loading="lazy"></a></p>{% endif %}
+{% endfor %}
+{% endif %}
 <p><a href="{% if page.lang == 'en' %}{{ '/en/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Back to Blog{% else %}返回日誌{% endif %}</a></p>
