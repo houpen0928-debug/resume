@@ -18,7 +18,7 @@ en_url: /en/contact/
 **Jason Hung**  
 Plant Operations Executive / Plant Manager
 
-- **Target roles:** Plant Manager, Production Head, Management Director and Head of Quality Assurance.
+- **Target roles:** Corporate Executive, Vice President, Plant Manager and other senior leadership positions.
 - **Industries:** Computers, consumer electronics, electronic components, optoelectronics and optics.
 - **Locations:** Shanghai, Jiangsu, Singapore and other parts of Asia.
 - **Availability:** Available upon acceptance; full-time; compensation negotiable.
