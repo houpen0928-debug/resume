@@ -1,0 +1,6 @@
+{% if page.zh_url and page.en_url %}
+<nav class="resume-language-switch" aria-label="{% if page.lang == 'en' %}Resume language{% else %}履歷語言{% endif %}">
+  <a href="{{ page.zh_url | relative_url }}" lang="zh-TW" hreflang="zh-TW"{% if page.lang != 'en' %} aria-current="page"{% endif %}>中文</a>
+  <a href="{{ page.en_url | relative_url }}" lang="en" hreflang="en"{% if page.lang == 'en' %} aria-current="page"{% endif %}>English</a>
+</nav>
+{% endif %}

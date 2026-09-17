@@ -4,6 +4,10 @@ title: "AI 與轉型成果"
 permalink: /transformation/
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /transformation/
+en_url: /en/transformation/
 ---
 
 <p class="executive-eyebrow">AI & DIGITAL TRANSFORMATION</p>

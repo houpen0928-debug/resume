@@ -3,6 +3,10 @@ permalink: /
 title: "洪承洋 Jason Hung"
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /
+en_url: /en/
 excerpt: "高階製造管理／廠長。17+ 年電子製造、0→1 創業與 AI 數位轉型經驗。"
 redirect_from:
   - /about/

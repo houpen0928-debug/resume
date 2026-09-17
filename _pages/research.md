@@ -4,6 +4,10 @@ title: "專案與工作研究經驗"
 permalink: /research/
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /research/
+en_url: /en/research/
 ---
 
 <p class="executive-eyebrow">PROJECTS & APPLIED RESEARCH</p>

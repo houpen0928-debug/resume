@@ -4,6 +4,10 @@ title: "履歷｜資料版"
 permalink: /cv-json/
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /cv-json/
+en_url: /en/cv-json/
 redirect_from:
   - /resume-json
 ---

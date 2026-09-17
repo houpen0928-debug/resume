@@ -4,6 +4,10 @@ title: "聯絡｜Career Opportunities"
 permalink: /contact/
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /contact/
+en_url: /en/contact/
 ---
 
 ## 洽談製造營運與管理職涯機會

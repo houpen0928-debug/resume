@@ -24,3 +24,9 @@
 {% if page.resume_style %}
 <link rel="stylesheet" href="{{ "/assets/css/executive.css" | relative_url }}">
 {% endif %}
+
+{% if page.zh_url and page.en_url %}
+<link rel="alternate" hreflang="zh-TW" href="{{ page.zh_url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ page.en_url | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ page.zh_url | absolute_url }}">
+{% endif %}

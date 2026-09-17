@@ -4,6 +4,10 @@ title: "完整履歷｜Professional Resume"
 permalink: /cv/
 author_profile: true
 resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /cv/
+en_url: /en/cv/
 redirect_from:
   - /resume
 ---

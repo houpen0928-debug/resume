@@ -9,3 +9,15 @@ main:
     url: /research/
   - title: "聯絡"
     url: /contact/
+
+en:
+  - title: "About"
+    url: /en/
+  - title: "Resume"
+    url: /en/cv/
+  - title: "AI & Transformation"
+    url: /en/transformation/
+  - title: "Research"
+    url: /en/research/
+  - title: "Contact"
+    url: /en/contact/
