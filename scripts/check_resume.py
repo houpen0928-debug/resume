@@ -11,7 +11,7 @@ class Links(HTMLParser):
     def handle_starttag(self, tag, attrs):
         self.urls.extend(v for k, v in attrs if k in ('href', 'src') and v)
 
-for route in ('index.html', 'cv/index.html', 'cv-json/index.html', 'transformation/index.html', 'contact/index.html'):
+for route in ('index.html', 'cv/index.html', 'cv-json/index.html', 'transformation/index.html', 'contact/index.html', 'research/index.html'):
     html = (root / route).read_text(encoding='utf-8')
     assert '洪承洋' in html, route
     assert 'jason-hung.png' in html, route

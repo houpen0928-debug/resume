@@ -5,5 +5,7 @@ main:
     url: /cv/
   - title: "AI 與轉型成果"
     url: /transformation/
+  - title: "工作研究"
+    url: /research/
   - title: "聯絡"
     url: /contact/

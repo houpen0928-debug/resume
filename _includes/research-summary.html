@@ -1,0 +1,11 @@
+<h2 id="research">專案與工作研究經驗</h2>
+{% for project in site.data.cv.projects %}
+<section class="executive-role">
+  <h3>{{ project.name }}</h3>
+  <p class="executive-date">{{ project.category }}</p>
+  <p><strong>{{ project.role }}</strong></p>
+  <p>{{ project.summary }}</p>
+  <ul>{% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+  <p><a href="{{ '/research/' | relative_url }}#{{ project.id }}">閱讀研究內容與資料依據</a></p>
+</section>
+{% endfor %}
