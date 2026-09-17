@@ -7,7 +7,8 @@
     "languages": "語言｜Languages",
     "sections": "履歷章節",
     "read": "閱讀研究內容與資料依據",
-    "research_url": "/research/"
+    "research_url": "/research/",
+    "awards": "領導成就與榮譽"
   },
   "en": {
     "experience": "Professional Experience",
@@ -17,6 +18,7 @@
     "languages": "Languages",
     "sections": "Resume sections",
     "read": "Read the research and source notes",
-    "research_url": "/en/research/"
+    "research_url": "/en/research/",
+    "awards": "Leadership & Honors"
   }
 }

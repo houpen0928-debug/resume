@@ -57,6 +57,8 @@ Delivered RMB 2M+ in annual benefits through AI process optimization and built a
 
 [Read the three research cases]({{ '/en/research/' | relative_url }})
 
+{% include resume-awards.html %}
+
 ## Leadership philosophy
 
 > There is no perfect process—only continued accountability for improvement.

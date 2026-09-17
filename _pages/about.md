@@ -58,6 +58,8 @@ redirect_from:
 
 [閱讀三項工作研究內容]({{ '/research/' | relative_url }})
 
+{% include resume-awards.html %}
+
 ## 管理信念
 
 > 沒有最好的流程，只有不斷改善的當責。

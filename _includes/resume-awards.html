@@ -1,0 +1,15 @@
+{% assign award_cv = site.data.cv %}
+{% assign award_heading = site.data.resume_labels['zh-TW'].awards %}
+{% if page.lang == 'en' %}
+  {% assign award_cv = site.data.cv_en %}
+  {% assign award_heading = site.data.resume_labels.en.awards %}
+{% endif %}
+<h2 id="awards">{{ award_heading }}</h2>
+{% for award in award_cv.awards %}
+<section class="executive-role">
+  <h3>{{ award.title }}</h3>
+  <p class="executive-date">{{ award.date }}</p>
+  <p>{{ award.summary }}</p>
+  <p><a href="{{ award.source }}">{{ award.sourceLabel }}</a></p>
+</section>
+{% endfor %}
