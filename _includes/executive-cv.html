@@ -1,0 +1,26 @@
+{% assign cv = site.data.cv %}
+<p class="executive-eyebrow">{{ cv.basics.label }}</p>
+<p>{{ cv.basics.summary }}</p>
+<nav class="executive-section-nav" aria-label="履歷章節">
+  <a href="#experience">工作經歷</a> · <a href="#education">學歷</a> · <a href="#skills">核心能力</a> · <a href="#languages">語言</a>
+</nav>
+<h2 id="experience">工作經歷｜Professional Experience</h2>
+{% for work in cv.work %}
+<section class="executive-role">
+  <h3>{{ work.position }}</h3>
+  <p><strong>{{ work.company }}</strong><br><span class="executive-date">{{ work.startDate }} — {{ work.endDate }} · {{ work.location }}</span></p>
+  <p>{{ work.summary }}</p>
+  <ul>{% for highlight in work.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+</section>
+{% endfor %}
+<h2 id="education">學歷｜Education</h2>
+{% for education in cv.education %}
+<h3>{{ education.institution }}</h3>
+<p>{{ education.area }}<br>{{ education.startDate }} — {{ education.endDate }}</p>
+{% endfor %}
+<h2 id="skills">核心能力｜Skills</h2>
+{% for skill in cv.skills %}
+<h3>{{ skill.name }}</h3><p>{{ skill.keywords | join: ' · ' }}</p>
+{% endfor %}
+<h2 id="languages">語言｜Languages</h2>
+<ul>{% for language in cv.languages %}<li>{{ language.language }}：{{ language.fluency }}</li>{% endfor %}</ul>

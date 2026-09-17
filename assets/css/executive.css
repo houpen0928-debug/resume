@@ -1,0 +1,16 @@
+.executive-eyebrow {font-size: .8em; font-weight: 700; letter-spacing: .1em; color: var(--global-link-color);}
+.executive-intro {border-left: 4px solid var(--global-link-color); padding-left: 1.2em; margin: 1em 0 1.8em;}
+.executive-lead {font-size: 1.55em; font-weight: 700; line-height: 1.5; margin-bottom: .5em;}
+.executive-metrics {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1em; margin: 1.5em 0 2em;}
+.executive-metrics > div {padding: 1.1em; border: 1px solid var(--global-border-color); border-radius: 8px;}
+.executive-metrics strong {display: block; font-size: 1.65em; color: var(--global-link-color);}
+.executive-metrics span {display: block; font-size: .8em; margin-top: .35em;}
+.executive-role {padding-bottom: 1.1em; margin-bottom: 1.5em; border-bottom: 1px solid var(--global-border-color);}
+.executive-date {font-size: .85em;}
+.executive-actions {display: flex; flex-wrap: wrap; gap: .6em; margin-top: 1.6em;}
+.executive-actions .btn {margin: 0;}
+.executive-section-nav {font-size: .85em; margin: 1.5em 0; line-height: 2;}
+.author__avatar img {border-radius: 8px;}
+.page__content {overflow-wrap: anywhere;}
+@media (max-width: 360px) {.executive-metrics {grid-template-columns: 1fr;} .executive-lead {font-size: 1.25em;}}
+@media print {.masthead, .sidebar, .page__footer, .executive-actions, .executive-section-nav {display: none !important;} .page {float: none !important; width: 100% !important; padding: 0 !important;} #main {margin: 0 !important; max-width: none !important;} .page__content {font-size: 10pt;} .executive-role h3 {break-after: avoid;} body {color: #111 !important; background: white !important;} a {color: #111 !important;}}

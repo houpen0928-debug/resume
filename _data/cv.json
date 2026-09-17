@@ -1,152 +1,175 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "洪承洋 Jason Hung",
+    "label": "高階製造管理／廠長｜Plant Operations Executive",
+    "email": "jasonhung168@hotmail.com",
+    "website": "https://houpen0928-debug.github.io/resume/",
+    "summary": "具 17+ 年電子製造、品質、研發與企業營運管理經驗，歷任廠長、管理總監及共同創辦人／執行副總。長期深耕上海、蘇州、昆山與常熟製造基地，具千人以上規模製造企業營運管理經驗，整合生產、品質、工程、EHS、HR 與 ESG，兼顧獲利、效率、交付與人才發展。",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "新北市",
+      "region": "台灣"
     },
-    "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
-      }
-    ]
+    "profiles": []
   },
-  "work": [],
+  "work": [
+    {
+      "company": "常熟精元電腦有限公司",
+      "position": "廠長｜Plant Manager",
+      "startDate": "2024-09",
+      "endDate": "2026-08",
+      "location": "常熟／蘇州，中國",
+      "summary": "統籌工廠生產、品質、工程技術、客戶服務、EHS、HR 與 ESG，推動營運效率與獲利能力提升。",
+      "highlights": [
+        "運用 AI 分析製程參數並優化工藝，創造單年 RMB 2M+（人民幣 200 萬元以上）成本效益。",
+        "建置企業私有 AI Agent，應用於法規、設備維修、品質與管理決策；品質人力節省 30% 為預估效益。",
+        "以 OEE、停機率、換線效率及日／週生產復盤，推動 Lean Manufacturing 與持續改善。",
+        "主導 ISO 9001、IATF 16949、ISO 14001／45001、QC 080000、TISAX、RBA 與 EcoVadis 等體系建置、維運及稽核應對。",
+        "擔任最高安全生產負責人（SHE Manager），落實 EHS 風險管控、應急演練與人才梯隊培養。",
+        "統籌工程與智慧財產權策略，導入 Engineering AI Agent，持續盤點專利缺口、競爭技術及設計規避風險。"
+      ]
+    },
+    {
+      "company": "盛旺汽車零部件（昆山）有限公司",
+      "position": "管理總監｜Management Director",
+      "startDate": "2022-01",
+      "endDate": "2024-09",
+      "location": "昆山，中國",
+      "summary": "整合 HR、EHS、行政成本、法規合規、政府關係、品質體系與自動化規劃。",
+      "highlights": [
+        "以 PDCA 建立人力評估、品質提升與成本控管的閉環管理機制，推動核心人才留任與長期激勵。",
+        "規劃 PLC／Kepware／OPC 工業通訊標準，串接底層設備數據與管理系統。",
+        "運用 APQP、SPC、FMEA、MSA、PPAP 與 8D，支持汽車與電子產業品質管理。",
+        "創立並帶領創意中心，推動專利申請與技術壁壘建構。"
+      ]
+    },
+    {
+      "company": "蘇州博澄康科技股份有限公司",
+      "position": "共同創辦人／執行副總｜Co-Founder / Executive Vice President",
+      "startDate": "2013-01",
+      "endDate": "2021-12",
+      "location": "蘇州，中國",
+      "summary": "共同創建企業，從產品定位、技術研發、團隊、供應鏈、製造到業務開發，建立 0→1 完整營運體系。",
+      "highlights": [
+        "主導鋰電自行車無線控制系統、雲端物聯網與軟硬體整合研發；相關產品獲德國 iF 設計獎及多國專利。",
+        "建構鋰電單車通訊協定，達成 65% 以上硬體適配率，支援 OTA 線上更新。",
+        "參與 SMT 製造、品質與自動化體系建置，透過跨部門改善將備料庫存降低 10% 以上。",
+        "建立 FABE 銷售 SOP 與業務團隊，結合展會、客戶開發及異業合作拓展市場。"
+      ]
+    },
+    {
+      "company": "威達電工業電腦",
+      "position": "品保經理｜Quality Assurance Manager",
+      "startDate": "2010-08",
+      "endDate": "2012-12",
+      "location": "上海，中國",
+      "summary": "管理工業電腦產品驗證、品質體系、客戶品質服務及 BIOS 研發團隊。",
+      "highlights": [
+        "統籌電氣、軟體、環境、震動與 EMC 等測試，以及實驗室資源、NPI、DCC 與內外部稽核。",
+        "主導 APP 電子互動式產品目錄，整合產品、庫存與供應商資訊，降低紙本印製成本並支持業務行動化。"
+      ]
+    },
+    {
+      "company": "英業達",
+      "position": "產品驗證副主管｜Product Validation Management",
+      "startDate": "2004-07",
+      "endDate": "2010-08",
+      "location": "上海，中國",
+      "summary": "負責 HP 筆記型電腦品質驗證與客戶溝通。",
+      "highlights": [
+        "管理 SW／HW／ME 測試計畫、品質稽核、問題追蹤與複測，確保品質要求與專案時程一致。"
+      ]
+    },
+    {
+      "company": "大同公司",
+      "position": "軟韌體測試工程師｜電腦開發群軟體開發課",
+      "startDate": "2003-04",
+      "endDate": "2004-06",
+      "location": "台北，台灣",
+      "summary": "從事系統分析、Build OEM OS 自動化系統與 WHQL 測試。",
+      "highlights": [
+        "依客戶需求進行系統測試與修改，累積網路應用程式與資料庫實務經驗。"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "國立臺北科技大學",
+      "area": "高階主管經營管理碩士 EMBA（在學，預計 2027-05 完成）",
+      "studyType": "碩士在學",
+      "startDate": "2025-05",
+      "endDate": "2027-05（預計）"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "大葉大學",
+      "area": "資訊工程學士（畢業）",
+      "studyType": "學士",
+      "startDate": "1997-09",
+      "endDate": "2001-06"
     }
   ],
-  "skills": [],
-  "languages": [],
+  "skills": [
+    {
+      "name": "Plant Operations｜製造營運",
+      "keywords": [
+        "China Manufacturing",
+        "EMS / SMT",
+        "產能與交付管理",
+        "NPI",
+        "OEE",
+        "預算與成本控管"
+      ]
+    },
+    {
+      "name": "Lean / Quality / Automation",
+      "keywords": [
+        "Lean Manufacturing",
+        "Continuous Improvement",
+        "APQP / FMEA / SPC / MSA / PPAP",
+        "8D",
+        "ISO / IATF",
+        "PLC / Kepware / OPC"
+      ]
+    },
+    {
+      "name": "AI & Digital Transformation",
+      "keywords": [
+        "AI 製程參數最佳化",
+        "企業私有 AI Agent",
+        "LLM 應用與訓練",
+        "工程知識與專利風險管理",
+        "IoT / 軟硬體整合"
+      ]
+    },
+    {
+      "name": "Leadership & Entrepreneurship",
+      "keywords": [
+        "0→1 企業創建",
+        "組織與人才發展",
+        "People-Centric Leadership",
+        "EHS / ESG",
+        "供應鏈與市場拓展",
+        "Accountability"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "英文",
+      "fluency": "聽、讀、寫精通；口說中等"
+    },
+    {
+      "language": "台語",
+      "fluency": "精通"
+    },
+    {
+      "language": "粵語",
+      "fluency": "略懂"
+    }
+  ],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": [],
   "interests": [],
-  "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "references": []
 }
