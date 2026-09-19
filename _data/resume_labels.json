@@ -1,0 +1,24 @@
+{
+  "zh-TW": {
+    "experience": "工作經歷｜Professional Experience",
+    "research": "專案與工作研究經驗",
+    "education": "學歷｜Education",
+    "skills": "核心能力｜Skills",
+    "languages": "語言｜Languages",
+    "sections": "履歷章節",
+    "read": "閱讀研究內容與資料依據",
+    "research_url": "/research/",
+    "awards": "領導成就與榮譽"
+  },
+  "en": {
+    "experience": "Professional Experience",
+    "research": "Projects & Applied Research",
+    "education": "Education",
+    "skills": "Core Capabilities",
+    "languages": "Languages",
+    "sections": "Resume sections",
+    "read": "Read the research and source notes",
+    "research_url": "/en/research/",
+    "awards": "Leadership & Honors"
+  }
+}

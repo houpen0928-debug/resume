@@ -1,0 +1,285 @@
+{
+  "basics": {
+    "name": "Jason Hung",
+    "label": "Plant Operations Executive / Plant Manager",
+    "email": "jasonhung168@hotmail.com",
+    "website": "https://houpen0928-debug.github.io/resume/en/",
+    "summary": "Manufacturing executive with 17+ years of experience across electronics manufacturing, quality, R&D and business operations. Former plant manager, management director and co-founder / executive vice president, with experience managing manufacturing organizations of more than 1,000 employees in Shanghai, Suzhou, Kunshan and Changshu. Integrates production, quality, engineering, EHS, HR and ESG to improve profitability, efficiency, delivery and talent development.",
+    "location": {
+      "city": "New Taipei City",
+      "region": "Taiwan"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Changshu Jingyuan Computer Co., Ltd.",
+      "position": "Plant Manager",
+      "startDate": "2024-09",
+      "endDate": "2026-08",
+      "location": "Changshu / Suzhou, China",
+      "summary": "Led production, quality, engineering, customer service, EHS, HR and ESG to improve operating efficiency and profitability.",
+      "highlights": [
+        "Used AI to analyze process parameters and optimize manufacturing, delivering RMB 2M+ in annual cost benefits.",
+        "Built a private enterprise AI agent for regulatory knowledge, equipment maintenance, quality and management decisions. A 30% reduction in quality staffing requirements is an estimated benefit.",
+        "Advanced lean manufacturing through OEE, downtime and changeover management, with daily and weekly production reviews.",
+        "Led implementation, maintenance and audit preparation for ISO 9001, IATF 16949, ISO 14001 / 45001, QC 080000, TISAX, RBA and EcoVadis systems.",
+        "Served as SHE Manager with overall production safety responsibility, overseeing EHS risk controls, emergency drills and leadership development.",
+        "Directed engineering and intellectual property strategy, introducing an Engineering AI Agent to review patent gaps, competing technologies and design-around risks.",
+        "Participated in AI research on keycap pull-force prediction using material, opening dimensions and force data to explore design optimization and offline validation."
+      ]
+    },
+    {
+      "company": "Shengwang Auto Parts (Kunshan) Co., Ltd.",
+      "position": "Management Director",
+      "startDate": "2022-01",
+      "endDate": "2024-09",
+      "location": "Kunshan, China",
+      "summary": "Integrated HR, EHS, administrative costs, regulatory compliance, government relations, quality systems and automation planning.",
+      "highlights": [
+        "Applied PDCA to workforce assessment, quality improvement and cost control; supported retention and long-term incentives for key talent.",
+        "Planned PLC / Kepware / OPC communication standards to connect equipment data with management systems.",
+        "Applied APQP, SPC, FMEA, MSA, PPAP and 8D to automotive and electronics quality management.",
+        "Established and led an innovation center to advance patent applications and proprietary technology."
+      ]
+    },
+    {
+      "company": "Suzhou Bochengkang Technology Co., Ltd.",
+      "position": "Co-Founder / Executive Vice President",
+      "startDate": "2013-01",
+      "endDate": "2021-12",
+      "location": "Suzhou, China",
+      "summary": "Co-founded the business and built its operations from the ground up, spanning product positioning, R&D, teams, supply chain, manufacturing and business development.",
+      "highlights": [
+        "Led wireless control, cloud IoT and hardware–software integration for lithium-battery e-bikes. Related products received a German iF Design Award and patents in multiple countries.",
+        "Developed e-bike communication protocols achieving over 65% hardware compatibility, with OTA update support.",
+        "Helped establish SMT manufacturing, quality and automation systems; cross-functional improvements reduced material inventory by more than 10%.",
+        "Built a sales team and FABE sales SOP, using exhibitions, customer development and cross-industry partnerships to expand markets.",
+        "Planned E-bike App and administration architecture, studying vehicle diagnostics, e-commerce, after-sales service, communities and IoT integration."
+      ]
+    },
+    {
+      "company": "IEI Integration Corp.",
+      "position": "Quality Assurance Manager",
+      "startDate": "2010-08",
+      "endDate": "2012-12",
+      "location": "Shanghai, China",
+      "summary": "Managed industrial PC validation, quality systems, customer quality services and the BIOS R&D team.",
+      "highlights": [
+        "Oversaw electrical, software, environmental, vibration and EMC testing, laboratory resources, NPI, DCC and internal / external audits.",
+        "Led an interactive product-catalog app integrating product, inventory and supplier information to reduce printing costs and support mobile sales."
+      ]
+    },
+    {
+      "company": "Inventec",
+      "position": "Deputy Supervisor, Product Validation",
+      "startDate": "2004-07",
+      "endDate": "2010-08",
+      "location": "Shanghai, China",
+      "summary": "Managed quality validation and customer communication for HP notebook computers.",
+      "highlights": [
+        "Coordinated software, hardware and mechanical test plans, quality audits, issue tracking and retesting to align quality requirements with project schedules."
+      ]
+    },
+    {
+      "company": "Tatung",
+      "position": "Software / Firmware Test Engineer",
+      "startDate": "2003-04",
+      "endDate": "2004-06",
+      "location": "Taipei, Taiwan",
+      "summary": "Worked on system analysis, OEM OS build automation and WHQL testing.",
+      "highlights": [
+        "Tested and modified systems to customer requirements, building practical experience in network applications and databases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "National Taipei University of Technology",
+      "area": "Executive MBA (in progress; expected May 2027)",
+      "studyType": "Master’s degree in progress",
+      "startDate": "2025-05",
+      "endDate": "2027-05 (expected)"
+    },
+    {
+      "institution": "Da-Yeh University",
+      "area": "Bachelor’s degree in Computer Science and Information Engineering",
+      "studyType": "Bachelor’s degree",
+      "startDate": "1997-09",
+      "endDate": "2001-06"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Plant Operations",
+      "keywords": [
+        "China Manufacturing",
+        "EMS / SMT",
+        "Capacity & Delivery Management",
+        "NPI",
+        "OEE",
+        "Budgeting & Cost Control"
+      ]
+    },
+    {
+      "name": "Lean / Quality / Automation",
+      "keywords": [
+        "Lean Manufacturing",
+        "Continuous Improvement",
+        "APQP / FMEA / SPC / MSA / PPAP",
+        "8D",
+        "ISO / IATF",
+        "PLC / Kepware / OPC"
+      ]
+    },
+    {
+      "name": "AI & Digital Transformation",
+      "keywords": [
+        "AI Process Optimization",
+        "Private Enterprise AI Agents",
+        "LLM Applications & Training",
+        "Engineering Knowledge & Patent Risk Management",
+        "IoT / Hardware–Software Integration"
+      ]
+    },
+    {
+      "name": "Leadership & Entrepreneurship",
+      "keywords": [
+        "0→1 Business Building",
+        "Organization & Talent Development",
+        "People-Centric Leadership",
+        "EHS / ESG",
+        "Supply Chain & Market Development",
+        "Accountability"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Proficient listening, reading and writing; intermediate speaking"
+    },
+    {
+      "language": "Taiwanese",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Cantonese",
+      "fluency": "Basic"
+    }
+  ],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": [],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "id": "ai-process-research",
+      "name": "AI Process & Engineering Parameter Optimization",
+      "category": "Workplace Project Research | Changshu Jingyuan",
+      "role": "Participated in engineering pull-force prediction and supported manufacturing AI applications through plant management.",
+      "summary": "Translated manufacturing and design problems into measurable parameters, prediction targets and validation workflows. Studied key pressing, paint fixtures, pogo-pin force, keycap pull force and laser-engraving parameter optimization.",
+      "highlights": [
+        "Pull-force prediction: the presentation explicitly lists Jason Hung as a participant. Material, opening dimensions and force data were explored to support design decisions and reduce trial and error.",
+        "Cross-functional case: the key-pressing project reported an offline experimental metric increasing from 200 to 1,113 pcs per operation. This is a team-reported result for a specific operation, not a whole-line capacity increase.",
+        "Implementation approach: connect shop-floor problems, data preparation, modeling, parameter recommendations and offline validation, distinguishing validated results from cost estimates."
+      ],
+      "details": [
+        {
+          "title": "Research Question & Method",
+          "text": "The keycap pull-force project addressed hook-opening dimensions that relied on experience and tooling trials. It used material and historical force data to explore dimension prediction and parameter recommendations. The presentation records 20 modeling samples and 3 additional test samples: preliminary validation requiring more data across specifications and operating conditions."
+        },
+        {
+          "title": "Manufacturing Validation",
+          "text": "The key-pressing case combined cylinder pressure, ejection time, pressing time and rubber hardness. Following model recommendations and offline testing, the team reported a metric increase from 200 to 1,113 pcs per operation. The original unit and limited scope are retained."
+        },
+        {
+          "title": "Benefits & Research Limitations",
+          "text": "The pull-force project estimated RMB 104,800 per year across tooling modification, experimental labor and new-hire training. This is a scenario estimate, not realized savings, and is not added to the RMB 2M+ annual result in the resume. Further work includes tolerance recommendations, larger samples and continued offline validation."
+        }
+      ],
+      "source": "AI Project Optimization Summary, slides 20, 22, 62, 66–67, 71, 74 and 79–80. Named participation applies to the pull-force project; other cases summarize team reports."
+    },
+    {
+      "id": "ebike-app-research",
+      "name": "Jingtek E-bike App & IoT Service System",
+      "category": "Product Planning & Entrepreneurship Research | E-bike / IoT",
+      "role": "Draws on product development and App / administration architecture planning during the co-founder / executive vice president role.",
+      "summary": "Explored integration of e-bike hardware communications, mobile applications and administration systems, extending product capabilities into online transactions, after-sales services and user communities.",
+      "highlights": [
+        "Scope included vehicle anomaly detection, repair locations, online shopping, member and product administration, and customer-behavior and sales analysis.",
+        "Planned community interaction, test rides and loyalty points to connect product services with market development.",
+        "Explored GPS positioning, rental geofencing, communication compatibility and OTA update requirements."
+      ],
+      "details": [
+        {
+          "title": "App & Administration Planning",
+          "text": "The presentation covers vehicle anomaly detection, nearby repair locations, shopping, wish lists and points redemption. Administration includes member, product and maintenance management, plus customer-behavior and sales analysis, considering product development and after-sales workflows together."
+        },
+        {
+          "title": "IoT & Business Model Research",
+          "text": "Explored community features, test rides and maintenance services to support engagement, alongside online transactions and experience sharing. Rental concepts proposed GPS, anti-theft and geofencing requirements; hardware planning included communication compatibility and an OTA update library."
+        },
+        {
+          "title": "Scope of Experience",
+          "text": "This case demonstrates system planning, hardware–software integration and business model research. The presentation provides no revenue, user-count or full-launch validation, so proposed features are not presented as realized commercial results. Its requirement to support over 60% of communication protocols is a different metric from the resume’s over 65% hardware compatibility result."
+        }
+      ],
+      "source": "Jingtek E_bike app system, slides 3 and 5–16. Personal responsibilities are contextualized by the entrepreneurship and App architecture experience in the September 15 resume."
+    },
+    {
+      "id": "agentic-workflow-research",
+      "name": "Agentic Workflows & Manufacturing Governance",
+      "category": "Continuing Study | Agentic Workflow",
+      "role": "Studied Morris Fan’s lecture materials to explore workflow integration and governance for private enterprise AI agents.",
+      "summary": "Used The Practice and Challenges of Agentic Workflows as a study reference, focusing on manufacturing problem definition, data and tool integration, human review and traceable decision processes.",
+      "highlights": [
+        "Studied task decomposition, knowledge retrieval, tool execution, result validation and human review.",
+        "Examined ERP / MES / SCM integration, RAG, MCP, tool permissions, exception handling and audit trails.",
+        "Explored equipment troubleshooting, scheduling, demand forecasting and supply-chain early warning as application scenarios."
+      ],
+      "details": [
+        {
+          "title": "Architecture & Workflow Study",
+          "text": "Reviewed the lecture’s data and tool layers, agent core, workflow orchestration and governance architecture. Explored turning operational needs into executable, observable tasks with clear boundaries for queries, tool actions and result verification."
+        },
+        {
+          "title": "Manufacturing Governance",
+          "text": "Focused on human-in-the-loop review, tool permissions, evidence logs, exception handling and stop mechanisms. Considered irreversibility, production risk and data sensitivity, alongside task success rate, cost, latency and failure recovery."
+        },
+        {
+          "title": "Applications & Attribution",
+          "text": "Equipment maintenance, quality knowledge, production scheduling, demand forecasting and supply-chain early warning are directions for further study. This is a review of lecture materials authored by Morris Fan; the lecture’s demonstration systems, code and results are not claimed as personal development or deployment outcomes."
+        }
+      ],
+      "source": "Morris Fan, The Practice and Challenges of Agentic Workflows, pages 4–13, 27–32, 73–82 and 84–91. Third-party study reference, not a personal publication."
+    }
+  ],
+  "awards": [
+    {
+      "title": "2026 NTUT EMBA 12th Glocalynergy — Overall Champion",
+      "date": "2026-04-18 – 2026-04-19",
+      "summary": "Served as captain of A2 Hantian Shenniu, leading the cross-disciplinary team to the overall championship among 15 teams. The event brought together more than 200 EMBA participants from eight classes, combining practical challenges, case analysis and strategic decision-making.",
+      "source": "https://money.udn.com/money/story/5723/9458953",
+      "sourceLabel": "Economic Daily News coverage · April 23, 2026"
+    },
+    {
+      "id": "taipei-cycle-2013",
+      "title": "2013 TAIPEI CYCLE d&i awards | Smart E-Box & APPs",
+      "date": "2013",
+      "summary": "Product / team recognition for Smart E-Box & APPs, presented as part of the E-bike product development and entrepreneurship experience. The supplied award record credits Shanghai Yiten Electronics Co., Ltd. for design and Zhida C.E International Co., Ltd. as manufacturer. The award record and ceremony photograph are shown below.",
+      "images": [
+        {
+          "path": "/images/awards/taipei-cycle-2013-award.jpg",
+          "caption": "Smart E-Box & APPs — 2013 award record"
+        },
+        {
+          "path": "/images/awards/taipei-cycle-2013-ceremony.jpg",
+          "caption": "TAIPEI CYCLE d&i awards ceremony"
+        }
+      ]
+    }
+  ]
+}

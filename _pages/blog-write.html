@@ -1,0 +1,29 @@
+---
+layout: single
+title: "撰寫日誌 / Write a post"
+permalink: /blog/write/
+author_profile: true
+resume_style: true
+---
+<p>填寫後按「前往 GitHub 發布」，登入具有此儲存庫寫入權限的帳號，再按 <strong>Commit changes</strong> 儲存。網站會自動更新，通常需幾分鐘。此表單不會直接發布，也不會要求密碼。</p>
+<p>Fill in the form, continue to GitHub, then use <strong>Commit changes</strong> with an authorized account. Publishing usually takes a few minutes. This form never asks for a password.</p>
+<form id="journal-editor">
+<p><label for="post-title">標題 / Title</label><input id="post-title" maxlength="150" required></p>
+<p><label for="post-date">日期 / Date</label><input id="post-date" type="date" required></p>
+<p><label for="post-language">文章語言 / Language</label><select id="post-language"><option value="zh-TW">中文</option><option value="en">English</option></select></p>
+<p><label for="post-summary">簡介 / Summary</label><input id="post-summary" maxlength="300" required></p>
+<p><label for="post-body">正文 / Content（支援 Markdown）</label><textarea id="post-body" rows="16" required></textarea></p>
+<p><label for="post-files">附件 / Attachments（圖片、PDF、Word、Excel、PowerPoint、ZIP）</label><input id="post-files" type="file" multiple accept=".jpg,.jpeg,.png,.gif,.webp,.pdf,.doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.txt,.zip"></p>
+<p>附件會公開顯示於日誌。每個檔案最多 20 MB，合計最多 50 MB。 / Attachments are public. Maximum 20 MB per file, 50 MB total.</p>
+<ul id="attachment-list" aria-live="polite"></ul>
+<p>有附件時會下載發布套件：解壓縮 ZIP，開啟下方「上傳發布套件」，將解壓縮後的 <strong>_journal 與 files 兩個資料夾</strong>一起拖入 GitHub，再按 Commit changes。請勿直接上傳 ZIP。文章與附件會一起發布。</p>
+<p>With attachments, download and unzip the publishing package. Drag both <strong>_journal and files folders</strong> into GitHub using the link below, then commit. Do not upload the ZIP itself.</p>
+<p><a href="https://github.com/houpen0928-debug/resume/upload/codex/resume-executive-0915" target="_blank" rel="noopener noreferrer">上傳發布套件 / Upload publishing package</a></p>
+<p><button class="btn btn--primary" type="submit">前往 GitHub 發布 / Continue to GitHub</button> <button class="btn" id="download-post" type="button">下載備份 / Download</button></p>
+<p id="editor-status" role="status" aria-live="polite"></p>
+</form>
+<noscript>請啟用 JavaScript 使用編輯表單，或從下方 GitHub 文章管理連結新增 Markdown 檔案。</noscript>
+<p><a href="https://github.com/houpen0928-debug/resume/tree/codex/resume-executive-0915/_journal">管理／編輯已發布文章 / Manage published posts</a></p>
+<p>編輯既有文章：開啟上方管理連結，選擇文章並按鉛筆圖示，修改後儲存。文章可用中文或英文撰寫，Blog 兩版入口都會列出；內容不會自動翻譯。離開本頁前可下載備份。</p>
+<script src="{{ '/assets/js/journal-package.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/journal-editor.js' | relative_url }}" defer></script>

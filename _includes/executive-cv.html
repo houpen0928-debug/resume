@@ -1,0 +1,32 @@
+{% assign resume_lang = page.lang | default: 'zh-TW' %}
+{% assign labels = site.data.resume_labels[resume_lang] %}
+{% assign cv = site.data.cv %}
+{% if page.lang == 'en' %}{% assign cv = site.data.cv_en %}{% endif %}
+
+<p class="executive-eyebrow">{{ cv.basics.label }}</p>
+<p>{{ cv.basics.summary }}</p>
+<nav class="executive-section-nav" aria-label="{{ labels.sections }}">
+  <a href="#experience">{{ labels.experience }}</a> · <a href="#research">{{ labels.research }}</a> · <a href="#awards">{{ labels.awards }}</a> · <a href="#education">{{ labels.education }}</a> · <a href="#skills">{{ labels.skills }}</a> · <a href="#languages">{{ labels.languages }}</a>
+</nav>
+<h2 id="experience">{{ labels.experience }}</h2>
+{% for work in cv.work %}
+<section class="executive-role">
+  <h3>{{ work.position }}</h3>
+  <p><strong>{{ work.company }}</strong><br><span class="executive-date">{{ work.startDate }} — {{ work.endDate }} · {{ work.location }}</span></p>
+  <p>{{ work.summary }}</p>
+  <ul>{% for highlight in work.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+</section>
+{% endfor %}
+{% include research-summary.html %}
+{% include resume-awards.html %}
+<h2 id="education">{{ labels.education }}</h2>
+{% for education in cv.education %}
+<h3>{{ education.institution }}</h3>
+<p>{{ education.area }}<br>{{ education.startDate }} — {{ education.endDate }}</p>
+{% endfor %}
+<h2 id="skills">{{ labels.skills }}</h2>
+{% for skill in cv.skills %}
+<h3>{{ skill.name }}</h3><p>{{ skill.keywords | join: ' · ' }}</p>
+{% endfor %}
+<h2 id="languages">{{ labels.languages }}</h2>
+<ul>{% for language in cv.languages %}<li>{{ language.language }}: {{ language.fluency }}</li>{% endfor %}</ul>

@@ -16,3 +16,11 @@ Name2 Name2:
   avatar      : "bio-photo.jpg"
   twitter     : "name2"
   google_plus : "Name"
+
+jason_en:
+  name: "Jason Hung"
+  avatar: "jason-hung.png"
+  bio: "Plant Operations Executive | 17+ years in manufacturing, entrepreneurship & AI transformation"
+  location: "New Taipei City, Taiwan"
+  email: "jasonhung168@hotmail.com"
+  github: "houpen0928-debug"
