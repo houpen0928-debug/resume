@@ -42,7 +42,7 @@
       catch {field('editor-status').textContent='無法建立套件，請減少附件大小後再試。 / Could not create package. Try smaller attachments.';}
       return;
     }
-    const url = new URL('https://github.com/houpen0928-debug/resume/new/codex/resume-executive-0915');
+    const url = new URL('https://github.com/houpen0928-debug/resume/new/master');
     url.searchParams.set('filename','_journal/'+post.name); url.searchParams.set('value',post.text);
     if (url.href.length > 7000) {
       download(post);
