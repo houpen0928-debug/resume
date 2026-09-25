@@ -2,14 +2,14 @@
 backend:
   name: github
   repo: houpen0928-debug/resume
-  branch: codex/resume-executive-0915
+  branch: master
   # OAuth 跳板（Cloudflare Worker，已部署）
   base_url: https://cms-auth.jasonhung0928.win
   auth_endpoint: /auth
 
 # 圖片上傳位置（baseurl 為 /resume，公開路徑需加前綴）
 media_folder: "images/uploads"
-public_folder: "/resume/images/uploads"
+public_folder: "/images/uploads"
 
 site_url: https://jasonhung0928.win
 logo_url: https://jasonhung0928.win/images/jason-hung.png

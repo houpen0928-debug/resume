@@ -13,9 +13,9 @@ title                    : "洪承洋 Jason Hung｜製造營運與智慧轉型"
 title_separator          : "-"
 name                     : &name "Jason Hung 洪承洋"
 description              : &description "17+ 年電子製造管理｜廠長・Plant Operations・0→1 Entrepreneurship・AI & Digital Transformation"
-url                      : "https://houpen0928-debug.github.io"
+url                      : "https://jasonhung0928.win"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/resume"
+baseurl                  : ""
 repository               : "houpen0928-debug/resume"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
