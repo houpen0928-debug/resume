@@ -1,0 +1,51 @@
+# Decap CMS 設定 — 網誌後台
+backend:
+  name: github
+  repo: houpen0928-debug/resume
+  branch: codex/resume-executive-0915
+  # OAuth 跳板（Cloudflare Worker），部署後替換成實際 URL
+  base_url: https://resume-cms-oauth.<你的子網域>.workers.dev
+  auth_endpoint: /auth
+
+# 圖片上傳位置（baseurl 為 /resume，公開路徑需加前綴）
+media_folder: "images/uploads"
+public_folder: "/resume/images/uploads"
+
+site_url: https://houpen0928-debug.github.io/resume/
+logo_url: https://houpen0928-debug.github.io/resume/images/jason-hung.png
+
+collections:
+  - name: "posts"
+    label: "Blog 文章"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: false
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "發文時間", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "摘要", name: "excerpt", widget: "text", required: false }
+      - label: "分類"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "標籤"
+        name: "tags"
+        widget: "list"
+        required: false
+      - { label: "顯示作者側欄", name: "author_profile", widget: "boolean", default: true, required: false }
+      - { label: "內文", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "頁面"
+    folder: "_pages"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "永久連結", name: "permalink", widget: "string", required: false }
+      - { label: "內文", name: "body", widget: "markdown", required: false }
