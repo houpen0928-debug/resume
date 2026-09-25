@@ -3,16 +3,16 @@ backend:
   name: github
   repo: houpen0928-debug/resume
   branch: master
-  # OAuth 跳板（Cloudflare Worker），部署後替換成實際 URL
-  base_url: https://resume-cms-oauth.<你的子網域>.workers.dev
+  # OAuth 跳板（Cloudflare Worker，已部署）
+  base_url: https://cms-auth.jasonhung0928.win
   auth_endpoint: /auth
 
-# 圖片上傳位置
+# 圖片上傳位置（baseurl 為 /resume，公開路徑需加前綴）
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: https://resume.houpen0928.com
-logo_url: https://res.cloudinary.com/demo/image/upload/v1680000000/logo.png
+site_url: https://jasonhung0928.win
+logo_url: https://jasonhung0928.win/images/jason-hung.png
 
 collections:
   - name: "posts"

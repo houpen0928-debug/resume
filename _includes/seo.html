@@ -1,13 +1,14 @@
 {% include base_path %}
 
 <!-- begin SEO -->
+{% assign localized_site_title = page.site_title | default: site.title %}
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
 
 {% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: localized_site_title %}
 {% endif %}
 
 {% if seo_title %}

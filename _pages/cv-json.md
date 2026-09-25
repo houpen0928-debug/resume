@@ -1,17 +1,17 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "履歷｜資料版"
 permalink: /cv-json/
-author_profile: false
+author_profile: true
+resume_style: true
+lang: zh-TW
+locale: zh-TW
+zh_url: /cv-json/
+en_url: /en/cv-json/
 redirect_from:
   - /resume-json
 ---
 
-{% include base_path %}
+{% include executive-cv.html %}
 
-{% include cv-template.html %}
-
-<div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
-</div>
+<p class="executive-actions"><button type="button" class="btn btn--primary" onclick="window.print()">列印／另存 PDF</button> <a class="btn" href="{{ '/cv/' | relative_url }}">完整履歷</a></p>

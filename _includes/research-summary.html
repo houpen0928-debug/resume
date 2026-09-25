@@ -1,0 +1,15 @@
+{% assign resume_lang = page.lang | default: 'zh-TW' %}
+{% assign labels = site.data.resume_labels[resume_lang] %}
+{% assign cv = site.data.cv %}
+{% if page.lang == 'en' %}{% assign cv = site.data.cv_en %}{% endif %}
+<h2 id="research">{{ labels.research }}</h2>
+{% for project in cv.projects %}
+<section class="executive-role">
+  <h3>{{ project.name }}</h3>
+  <p class="executive-date">{{ project.category }}</p>
+  <p><strong>{{ project.role }}</strong></p>
+  <p>{{ project.summary }}</p>
+  <ul>{% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}</ul>
+  <p><a href="{{ labels.research_url | relative_url }}#{{ project.id }}">{{ labels.read }}</a></p>
+</section>
+{% endfor %}
