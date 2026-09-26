@@ -54,9 +54,10 @@ redirect_from:
 
 - **AI 製程與工程參數最佳化：**參與拉拔力預測，研究資料建模、參數推薦與現場驗證。
 - **Jingtek E-bike App 系統：**結合產品研發、IoT、商城與售後服務規劃。
+- **電動車控制器嵌入式開發：**延續 10+ 年嵌入式開發經驗，持續開發 BLDC 電機控制韌體、調校工具鏈與 AI 診斷應用。
 - **智能體工作流：**研讀製造業 AI 架構、人工覆核與治理機制。
 
-[閱讀三項工作研究內容]({{ '/research/' | relative_url }})
+[閱讀四項工作研究內容]({{ '/research/' | relative_url }})
 
 {% include resume-awards.html %}
 

@@ -255,6 +255,28 @@
         }
       ],
       "source": "Morris Fan, The Practice and Challenges of Agentic Workflows, pages 4–13, 27–32, 73–82 and 84–91. Third-party study reference, not a personal publication."
+    },
+    {
+      "id": "embedded-controller-dev",
+      "name": "E-Vehicle Controller Embedded Development",
+      "category": "Ongoing Development | Embedded Systems",
+      "role": "Personal Technical Research & Development (ongoing)",
+      "summary": "Building on 10+ years of embedded development experience, ongoing firmware and tooling development for an e-bike controller (three-phase BLDC motor control): motor control algorithms, migration of production-proven protection logic, communication protocol design, Windows tuning tools and AI-assisted diagnostics over logged operating data.",
+      "details": [
+        {
+          "title": "Motor Control & Firmware",
+          "text": "Re-implemented production-proven control logic on a modern dual-core MCU with integrated CAN/BLE: three-phase BLDC commutation and SVPWM sinusoidal control, overcurrent / undervoltage / stall protection, and firmware-level electromagnetic braking (E-ABS) with regenerative energy recovery and safety management."
+        },
+        {
+          "title": "Protocols & Toolchain",
+          "text": "Designed serial communication protocols and debug frames (controller–display–BMS) and built a Windows tuning tool covering parameter read/write, Hall calibration, live charts and diagnostic export, supporting motor matching and production calibration."
+        },
+        {
+          "title": "AI Applications",
+          "text": "Exported operating data (current, speed, voltage, load state) as structured diagnostic packages; explored LLM-assisted fault diagnosis and motor-parameter self-learning as a bridge to IoT services and after-sales applications."
+        }
+      ],
+      "source": "Personal development records (GitHub)"
     }
   ],
   "awards": [
