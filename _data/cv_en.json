@@ -143,6 +143,17 @@
       ]
     },
     {
+      "name": "Platform & Full-Stack Delivery",
+      "keywords": [
+        "0→1 platform build & launch",
+        "Linux server / Nginx / systemd operations",
+        "Automated deployment & regression testing",
+        "Domain, ICP filing & HTTPS compliance",
+        "WeChat mini-program & payment ecosystem",
+        "Multi-role access control & funds-flow state machines"
+      ]
+    },
+    {
       "name": "Leadership & Entrepreneurship",
       "keywords": [
         "0→1 Business Building",
@@ -175,6 +186,21 @@
   "interests": [],
   "references": [],
   "projects": [
+    {
+      "id": "platform-build-experience",
+      "name": "0→1 Digital Platform Build & Launch",
+      "category": "Independent Build | 2026",
+      "role": "End-to-end owner: architecture, development, testing, production launch",
+      "summary": "Took a multi-role service platform from architecture design and full-stack development through automated testing to production deployment on cloud infrastructure — completed end to end in personal time (described generically; no project-specific details).",
+      "highlights": [
+        "Five-endpoint system architecture: customer / admin / vendor / partner portal / public website, with multi-role access control and security boundaries designed up front.",
+        "Production-grade deployment & operations: Linux server provisioning, Nginx reverse proxy, systemd services (auto-start, auto-recovery), and a one-command deployment script — code-to-public-web in under 15 minutes.",
+        "Full compliance chain: domain registration, DNS, ICP filing, HTTPS certificates, plus WeChat mini-program registration/certification and payment ecosystem integration.",
+        "Quality engineering: 80+ automated regression tests plus targeted test suites gating every release; automated screenshot tooling produced a 60+ page system manual.",
+        "Complex business modeling: state-machine workflows, funds-flow and reconciliation logic, exception compensation and risk-control thresholds — compliance rules built into system design."
+      ],
+      "details": []
+    },
     {
       "id": "ai-process-research",
       "name": "AI Process & Engineering Parameter Optimization",
