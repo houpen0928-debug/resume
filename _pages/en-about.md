@@ -55,9 +55,10 @@ Delivered RMB 2M+ in annual benefits through AI process optimization and built a
 - **Jingtek E-bike App:** product development and planning across IoT, e-commerce and after-sales services.
 - **E-vehicle controller embedded development:** drawing on 10+ years of embedded experience, ongoing development of BLDC motor-control firmware, tuning toolchain and AI-assisted diagnostics.
 - **E-vehicle battery management system (BMS):** end-to-end design of a 36V lithium BMS — AFE/CAN architecture, safety-gated regenerative braking with advance negotiation, and online terminal contact-resistance monitoring, with schematic and CAN protocol draft delivered.
+- **Industrial edge gateway (hardware + software + AI):** designed for the legacy-equipment integration pain point — an edge node board, a JSON protocol-description engine and AI-generated protocol profiles turn proprietary protocol integration from custom development into configuration.
 - **Agentic workflows:** continuing study of manufacturing AI architecture, human review and governance.
 
-[Read the five research cases]({{ '/en/research/' | relative_url }})
+[Read the six research cases]({{ '/en/research/' | relative_url }})
 
 {% include resume-awards.html %}
 

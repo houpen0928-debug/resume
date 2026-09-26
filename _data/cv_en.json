@@ -325,6 +325,28 @@
         }
       ],
       "source": "Personal development records (GitHub: ebikeBMS)"
+    },
+    {
+      "id": "edge-gateway",
+      "name": "Industrial Edge Gateway (Hardware + Software + AI)",
+      "category": "Ongoing Development | Industrial IoT",
+      "role": "Personal Technical Research & Development (ongoing)",
+      "summary": "Born from a universal manufacturing pain point: legacy equipment (RS-232 proprietary-protocol meters, old PLCs) holds data that cannot be extracted, and vendor-based integration is costly with no guarantee of success. The direction of this project is a hardware-software-AI system that turns proprietary protocol integration from custom development into configuration — an in-house low-cost edge node board for physical access, a JSON protocol-description engine that parses any proprietary frame format with zero code changes, and AI that generates protocol profiles and alarm rules from packet samples and plain-language descriptions, connecting old machines to data platforms quickly and affordably.",
+      "details": [
+        {
+          "title": "Edge Node Hardware",
+          "text": "In-house DIN-rail node board: ESP32-S3 host + CH438 multi-UART expansion, isolated RS-232 x4 / RS-485 x2 / CAN x1, 9-36V industrial input with surge protection, Ethernet/WiFi uplink to MQTT."
+        },
+        {
+          "title": "JSON Protocol Engine",
+          "text": "No hard-coded protocols: frame header/length/checksum/field layout lives in one JSON profile, parsed by a streaming engine tolerant of arbitrary byte splits and bad frames — adding a device is a configuration change, not a code change; a local rule engine (debounced thresholds, deadband filtering) handles edge computing."
+        },
+        {
+          "title": "AI-Assisted Integration",
+          "text": "AI generates protocol profiles and rules from packet captures and plain-language descriptions for human review, cutting protocol reverse-engineering from days to minutes; the run-time direction adds lightweight on-node anomaly detection."
+        }
+      ],
+      "source": "Personal development records (GitHub: edgenotepcb)"
     }
   ],
   "awards": [
