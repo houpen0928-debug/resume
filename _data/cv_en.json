@@ -303,6 +303,28 @@
         }
       ],
       "source": "Personal development records (GitHub)"
+    },
+    {
+      "id": "ebike-bms-dev",
+      "name": "E-Vehicle Battery Management System (BMS) Development",
+      "category": "Ongoing Development | Battery Management",
+      "role": "Personal Technical Research & Development (ongoing)",
+      "summary": "End-to-end design of a 36V (10S) lithium battery management system: analog front-end (AFE) selection, host MCU and CAN architecture, safety-gated regenerative braking with advance negotiation, and online terminal contact-resistance monitoring — with full schematic, pin-level wiring table, CAN protocol draft and prior-art patent landscape delivered.",
+      "details": [
+        {
+          "title": "Architecture & Hardware",
+          "text": "BQ76930 AFE + STM32F103 (built-in bxCAN) + CAN transceiver: 10S cell sampling and balancing, charge/discharge MOS power stage, 42V-to-5V buck with integrated Bluetooth speaker; full schematic and pin-level connection table delivered."
+        },
+        {
+          "title": "Protocol & Regen Safety",
+          "text": "Mapped the legacy RS232 battery protocol onto J1939-style CAN frames for controller integration; regenerative braking gated by a two-layer mechanism (safety admission + advance no-regen negotiation) with multi-level SOC/temperature/current thresholds, protecting both battery and controller lifespan across a two-phase rollout plan."
+        },
+        {
+          "title": "Differentiation & Patent Landscape",
+          "text": "Self-developed B+/P+ dual-point online contact-resistance monitoring (guarding against outdoor plug corrosion) and an anthropomorphic voice-prompt state machine; completed prior-art patent search with FTO risk analysis and planned method-claim invention filings."
+        }
+      ],
+      "source": "Personal development records (GitHub: ebikeBMS)"
     }
   ],
   "awards": [
