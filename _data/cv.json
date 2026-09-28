@@ -4,7 +4,7 @@
     "label": "高階製造管理／廠長｜Plant Operations Executive",
     "email": "jasonhung168@hotmail.com",
     "website": "https://houpen0928-debug.github.io/resume/",
-    "summary": "具 17+ 年電子製造、品質、研發與企業營運管理經驗，歷任廠長、管理總監及共同創辦人／執行副總。長期深耕上海、蘇州、昆山與常熟製造基地，具千人以上規模製造企業營運管理經驗，整合生產、品質、工程、EHS、HR 與 ESG，兼顧獲利、效率、交付與人才發展。",
+    "summary": "具 17+ 年電子製造、品質、研發與企業營運管理經驗，歷任廠長、管理總監及共同創辦人／執行副總。長期深耕上海、蘇州、昆山與常熟製造基地，具千人以上規模製造企業營運管理經驗，整合生產、品質、工程、EHS、HR 與 ESG，兼顧獲利、效率、交付與人才發展。兼具 Wafer-to-Market 半導體後段實戰經驗，曾整合晶圓測試、良率評估、封裝供應鏈與最終銷售。",
     "location": {
       "city": "新北市",
       "region": "台灣"
@@ -186,6 +186,19 @@
   "interests": [],
   "references": [],
   "projects": [
+    {
+      "id": "wafer-to-market-2021",
+      "name": "Wafer-to-Market 半導體後段實戰",
+      "category": "半導體供應鏈與商品化專案｜2021",
+      "role": "資金與供應鏈整合、測試封裝協調及銷售推進",
+      "summary": "2021 年疫情與晶片缺貨期間，透過產業管道取得 16 片 SXX wafer，整合資金與供應鏈資源，完成從晶圓取得、測試與封裝驗證到最終銷售的完整流程。",
+      "highlights": [
+        "執行封裝前驗證與產品測試狀態判讀（二測／三測），自行尋找 Probe／CP Test 廠商，安排探針測試並評估良率。",
+        "實際接觸／走訪中國大陸多家封裝測試廠，完成封裝廠選擇、封裝參數確認，推進封裝完成與成品驗證。",
+        "串接 Wafer → Probe/CP → Yield Assessment → Package Engineering → OSAT → Final Verification → Sales，累積半導體後段供應鏈整合與商品化實戰經驗。"
+      ],
+      "details": []
+    },
     {
       "id": "platform-build-experience",
       "name": "0→1 數位平台建設與上線實戰",
