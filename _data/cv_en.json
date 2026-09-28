@@ -4,7 +4,7 @@
     "label": "Plant Operations Executive / Plant Manager",
     "email": "jasonhung168@hotmail.com",
     "website": "https://houpen0928-debug.github.io/resume/en/",
-    "summary": "Manufacturing executive with 17+ years of experience across electronics manufacturing, quality, R&D and business operations. Former plant manager, management director and co-founder / executive vice president, with experience managing manufacturing organizations of more than 1,000 employees in Shanghai, Suzhou, Kunshan and Changshu. Integrates production, quality, engineering, EHS, HR and ESG to improve profitability, efficiency, delivery and talent development.",
+    "summary": "Manufacturing executive with 17+ years of experience across electronics manufacturing, quality, R&D and business operations. Former plant manager, management director and co-founder / executive vice president, with experience managing manufacturing organizations of more than 1,000 employees in Shanghai, Suzhou, Kunshan and Changshu. Integrates production, quality, engineering, EHS, HR and ESG to improve profitability, efficiency, delivery and talent development. Also brings hands-on Wafer-to-Market semiconductor back-end experience, coordinating wafer testing, yield assessment, packaging partners and final sales.",
     "location": {
       "city": "New Taipei City",
       "region": "Taiwan"
@@ -186,6 +186,19 @@
   "interests": [],
   "references": [],
   "projects": [
+    {
+      "id": "wafer-to-market-2021",
+      "name": "Wafer-to-Market Semiconductor Back-End Experience",
+      "category": "Semiconductor Supply Chain & Commercialization Project | 2021",
+      "role": "Funding and supply chain integration, test and packaging coordination, and sales",
+      "summary": "During the 2021 pandemic and chip shortage, sourced 16 SXX wafers through industry channels, coordinated funding and supply chain resources, and completed the workflow from wafer sourcing through testing, packaging and final verification to sales.",
+      "highlights": [
+        "Conducted pre-packaging verification, assessed product test status (second/third test rounds), independently sourced Probe/CP Test providers, and coordinated wafer probing and yield assessment.",
+        "Engaged with and visited multiple packaging and testing facilities in mainland China; selected packaging partners, confirmed packaging parameters, and coordinated packaging completion and final product verification.",
+        "Completed the Wafer → Probe/CP → Yield Assessment → Package Engineering → OSAT → Final Verification → Sales workflow, building practical experience in semiconductor back-end supply chain integration and commercialization."
+      ],
+      "details": []
+    },
     {
       "id": "platform-build-experience",
       "name": "0→1 Digital Platform Build & Launch",
