@@ -187,6 +187,35 @@
   "references": [],
   "projects": [
     {
+      "id": "ai-aoi-defect-classification",
+      "name": "AI Surface Defect Classification & Explainability",
+      "category": "Applied AI Vision | 2026",
+      "role": "Data pipeline, model training, explainability analysis and demo interface — independently delivered",
+      "summary": "A reproducible vision-classification build on an industrial surface-defect problem: constructed a data pipeline from a public industrial dataset, compared CNN and Transformer transfer learning under an identical protocol, validated model evidence against human annotations using Grad-CAM, and packaged the result into a live inference demo. The goal was to test whether \"accurate is not enough — a line AI must explain its call\" is workable in practice.",
+      "highlights": [
+        "Dataset: NEU-DET steel surface defect benchmark (shop-floor collected, 1,770 images x 6 classes: crazing, inclusion, patches, pitted surface, rolled-in scale, scratches), stratified train/val/test split with a fixed seed (1,236/264/270), verified leak-free.",
+        "Models: ResNet18 (CNN) and ViT-B/16 (Transformer), both ImageNet-pretrained transfer learning; both reached 100% accuracy and macro-F1 1.00 on a 270-image held-out test set.",
+        "Explainability: Grad-CAM heatmaps overlaid against ground-truth boxes, 12/12 aligned; observed CNN heatmaps concentrating on the defect body while ViT attention spread wider.",
+        "Engineering: NVIDIA RTX 5060 (Blackwell) + PyTorch CUDA 12.8 + bf16 mixed precision; fully scripted and reproducible.",
+        "Deliverables: data pipeline, training/evaluation scripts, confusion matrix and classification report, Grad-CAM comparison, Gradio inference demo."
+      ],
+      "details": [
+        {
+          "title": "Problem framing and data pipeline",
+          "text": "Six steel surface defect classes were used as the classification target; Pascal VOC annotations were parsed into class labels with a fixed-seed stratified split ensuring disjoint train/val/test sets, plus sample and bounding-box references as a baseline for later explainability comparison."
+        },
+        {
+          "title": "Model comparison and architecture observation",
+          "text": "CNN and Transformer were compared under an identical split and training protocol; both reached 100% on the held-out set, indicating that for well-defined industrial defect classification, image features and pretrained representations are already sufficient. The real difference appeared in explainability — CNN heatmaps concentrate on the defect body while ViT attention spreads wider, reflecting how architecture affects how readable a model's evidence is, and what a line-selection decision must weigh beyond accuracy."
+        },
+        {
+          "title": "Explainability and scope boundary",
+          "text": "Grad-CAM was used to visualize model evidence against human annotations, confirming that attended regions align with defect locations — a key requirement for line AI, where verdicts must be traceable for QA, process and customers, not just a score. Scope note: this is offline validation on a public dataset, not a production deployment; the dataset is limited in scale and scenario, and 100% accuracy reflects benchmark characteristics rather than mass-production performance."
+        }
+      ],
+      "source": "Personal development record (GitHub: ai-aoi) | NEU-DET public industrial surface-defect dataset"
+    },
+    {
       "id": "wafer-to-market-2021",
       "name": "Wafer-to-Market Semiconductor Back-End Experience",
       "category": "Semiconductor Supply Chain & Commercialization Project | 2021",
