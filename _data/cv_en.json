@@ -389,6 +389,28 @@
         }
       ],
       "source": "Personal development records (GitHub: edgenotepcb)"
+    },
+    {
+      "id": "smart-lock-npi",
+      "name": "Smart Door Lock Product Definition & Selection (NPI)",
+      "category": "Product Definition & Selection | Smart Lock",
+      "role": "Requirement definition, solution selection and cost engineering — independently delivered (design phase, ongoing)",
+      "summary": "Targeting one hardware platform shared across three scenarios — home, apartment and small B&B — redefined the requirements for a full-featured smart door lock (WiFi / Bluetooth / key card / PIN / fingerprint / doorbell / App / smart-home ecosystem), and completed the ecosystem route decision, main-MCU and peripheral selection, single-lock BOM cost engineering, and a hotel-grade complete system (lock + gateway + card encoder + management software) pricing structure; on top of existing Bluetooth lock assets, planned auto double-locking and tamper warning as differentiating features.",
+      "details": [
+        {
+          "title": "Requirement redefinition and solution selection",
+          "text": "Reframed \"WiFi home integration\" as Matter compliance (Apple / Google / Amazon / SmartThings) and established BLE as a mandatory commissioning channel rather than an option. After comparing in-house development, commercial module and hybrid routes, settled on a two-tier architecture: ESP32-C6 (WiFi 6 + BLE 5.3 + 802.15.4, Matter-native) as the main MCU, with a low-power co-processor (450 nA deep sleep) handling always-on standby and touch wake. Completed unified peripheral selection (card reader, semiconductor fingerprint, 6068 standard lock body, voice prompt, isolated motor drive). Hardware reserves Aliro (phone-wallet tap-to-unlock) capability, settled once and rolled out in software phases."
+        },
+        {
+          "title": "Cost engineering and three-scenario configuration",
+          "text": "Delivered single-lock BOM cost engineering: ¥281.77 at 1,000 units, targeting ¥240 at 10k, with an eight-block cost breakdown identifying the credential layer at 42.6% (the fingerprint module alone at 31% of the lock) as the negotiation focus. The key design is one board, many configurations — home / apartment / B&B use direct WiFi with no gateway needed (saving ¥228 per door), while hotels use BLE reporting plus a PoE gateway (one gateway per five doors, ¥30 per door amortized); hardware differences reduce to lock-body grade, door sensor and enclosure material."
+        },
+        {
+          "title": "Hotel-grade system and differentiating features",
+          "text": "Planned a 100-room hotel system (lock + gateway + card encoder + management software + installation) at roughly ¥90,055 (¥900 per door) against a public tender benchmark of ¥1,090 per door, gaining cost advantage through 1:5 gateway coverage and a lightweight system, supported by an RFQ list and risk register. Also planned auto double-locking with tamper warning: scheduled or sensed escalation to double lock with tiered response (physical hardening before alarm), four sensing paths with two-path cross-validation to cut false alarms, mapped to Matter's native lock states and DoorForcedOpen alarm code."
+        }
+      ],
+      "source": "Personal development record (smart lock selection plan v1.0 / feature addendum v1.1) | Reused existing Bluetooth lock project assets"
     }
   ],
   "awards": [
