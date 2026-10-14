@@ -10,6 +10,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # ★ 為什麼這裡特別需要 timeout（2026-10-14 補）：
+    #   這是四個 workflow 裡唯一有「實質掛住風險」的 ——
+    #   它執行 talkmap.ipynb，裡面用 geopy 呼叫 **Google 地圖 Geocoding API**。
+    #   網路一卡、API 限流、或 Google 改回應格式，nbconvert 就會無限期等下去。
+    #   沒有 timeout 時，掛住會一路燒到 GitHub 上限（6 小時）才停。
+    timeout-minutes: 20
     permissions:
       contents: write           # This workflow pushes to the repository
 
