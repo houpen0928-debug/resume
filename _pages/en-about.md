@@ -49,6 +49,10 @@ Delivered RMB 2M+ in annual benefits through AI process optimization and built a
 {{ skill.keywords | join: ' · ' }}
 {% endfor %}
 
+## Professional articles
+
+- **"Factory AI Adoption: The Data Foundation Is the First Barrier — Using AI Itself to Tackle Legacy Equipment Protocol Challenges" (2026-10-15):** argues that the bottleneck is not the algorithm but the underlying data, and proposes AI combined with self-developed edge computing boards for data reverse engineering, establishing the sequence of building the data foundation before deploying upper-layer AI. [Read the full article]({{ '/blog/2026-10-15-factory-ai-data-foundation-en/' | relative_url }})
+
 ## Projects & applied research
 
 - **AI process and engineering optimization:** participated in pull-force prediction, exploring modeling, parameter recommendations and offline validation.
@@ -60,7 +64,7 @@ Delivered RMB 2M+ in annual benefits through AI process optimization and built a
 - **AI-video Editing production pipeline:** a self-developed production-grade Windows workstation automating the full content workflow — merging, bilingual subtitles, branding overlays, AI description, AI thumbnail, AI trailer, one-click YouTube upload and AI content review (sensitive-scene masking with human sign-off); driven by a single scripted pipeline with built-in acceptance gates for stable, plan-compliant operation.
 - **Agentic workflows:** continuing study of manufacturing AI architecture, human review and governance.
 
-[Read the eight research cases]({{ '/en/research/' | relative_url }})
+[Read the research cases]({{ '/en/research/' | relative_url }})
 
 {% include resume-awards.html %}
 

@@ -8,7 +8,9 @@
     "sections": "履歷章節",
     "read": "閱讀研究內容與資料依據",
     "research_url": "/research/",
-    "awards": "領導成就與榮譽"
+    "awards": "領導成就與榮譽",
+    "articles": "專業文章｜Professional Articles",
+    "read_article": "閱讀全文"
   },
   "en": {
     "experience": "Professional Experience",
@@ -19,6 +21,8 @@
     "sections": "Resume sections",
     "read": "Read the research and source notes",
     "research_url": "/en/research/",
-    "awards": "Leadership & Honors"
+    "awards": "Leadership & Honors",
+    "articles": "Professional Articles",
+    "read_article": "Read the full article"
   }
 }

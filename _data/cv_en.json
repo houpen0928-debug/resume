@@ -185,7 +185,47 @@
   "portfolio": [],
   "interests": [],
   "references": [],
+  "articles": [
+    {
+      "id": "factory-ai-data-foundation-article",
+      "name": "Factory AI Adoption: The Data Foundation Is the First Barrier — Using AI Itself to Tackle Legacy Equipment Protocol Challenges",
+      "category": "Professional Article | Published 2026-10-15",
+      "role": "Sole author and publisher (personal viewpoint article)",
+      "summary": "Diagnoses why so many manufacturing AI projects stall mid-way: the real bottleneck is not the algorithm but the collection of high-quality underlying data. The article argues for the correct sequence — build the data foundation first, then deploy upper-layer AI — and proposes a strategy of AI combined with self-developed edge computing boards for data reverse engineering: on-site packet capture, AI packet analysis and feature extraction, and automatic generation of protocol layers, so both legacy proprietary protocols and modern standards can be integrated without vendor documentation or mass machine replacement.",
+      "url": "/blog/2026-10-15-factory-ai-data-foundation-en/",
+      "also": "/blog/2026-10-15-factory-ai-data-foundation/",
+      "also_label": "繁體中文版"
+    }
+  ],
   "projects": [
+    {
+      "id": "factory-ai-data-foundation-article",
+      "name": "Professional Article | The Data Foundation of Factory AI Adoption",
+      "category": "Professional Article | Published 2026-10-15",
+      "role": "Sole author and publisher (personal viewpoint article)",
+      "summary": "Diagnoses why so many manufacturing AI projects stall mid-way: the real bottleneck is not the algorithm but the collection of high-quality underlying data. The article argues for the correct sequence — build the data foundation first, then deploy upper-layer AI — and proposes a strategy of AI combined with self-developed edge computing boards for data reverse engineering: on-site packet capture, AI-driven packet analysis and feature extraction, and automatic generation of protocol layers, so both legacy proprietary protocols and modern standards can be integrated without vendor documentation or mass machine replacement.",
+      "highlights": [
+        "Core thesis: the data and protocol barrier predates AI — it already plagued factories during Industry 4.0 digitalization; AI performance depends entirely on input quality.",
+        "Industry critique: most software vendors sell only upper-layer AI tools — \"selling a magic wand while charging customers to wield it\" — with no data collection or protocol parsing underneath, even cutting-edge Agents cannot function.",
+        "Proposed solution: AI plus self-developed edge boards for data reverse engineering, compressing protocol reverse-engineering from months of manual engineer work into an automated pipeline.",
+        "Conclusion: skipping the data foundation looks like a shortcut, but the hidden risk is a project that becomes a demo unable to run stably on a real production line."
+      ],
+      "details": [
+        {
+          "title": "Origin and Problem Definition",
+          "text": "Observing that manufacturing AI projects cluster around upper-layer applications (AI Agents, intelligent scheduling, quality prediction) and frequently stall, the article reframes the problem: the bottleneck is not the algorithm but whether underlying data can be fully captured, carries operational value, and stays free of noise or missing records. These three are the precondition for reliable model inputs."
+        },
+        {
+          "title": "Argument Structure and Strategy",
+          "text": "The article develops through four movements — tracing the barrier, the cost of traditional remedies, the core strategy, and the correct sequence. Traditional remedies (requesting OEM protocol documents, custom drivers, replacing old hardware, adding sensors) are expensive and slow, and many legacy vendors have ceased support and refuse to release protocol specifications; the article therefore proposes edge packet capture combined with AI batch packet analysis and feature extraction to auto-generate protocol layers."
+        },
+        {
+          "title": "Practical Correspondence and Publication",
+          "text": "The edge-capture and auto-generated-protocol strategy maps to the author's ongoing Industrial Edge Gateway (hardware + software + AI) project — an ESP32-S3 edge node board, a JSON protocol-description engine, and AI-generated protocol profiles and rules. The full text is also published in the site's Blog journal in both English and Traditional Chinese."
+        }
+      ],
+      "source": "Personal professional article, published 2026-10-15 | Full text in the site Blog journal (en / zh-TW)"
+    },
     {
       "id": "ai-aoi-defect-classification",
       "name": "AI Surface Defect Classification & Explainability",

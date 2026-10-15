@@ -80,17 +80,35 @@ zh = json.loads(Path('_data/cv.json').read_text(encoding='utf-8'))
 en = json.loads(Path('_data/cv_en.json').read_text(encoding='utf-8'))
 assert [(w['startDate'], w['endDate']) for w in zh['work']] == [(w['startDate'], w['endDate']) for w in en['work']]
 assert [p['id'] for p in zh['projects']] == [p['id'] for p in en['projects']]
+assert [a['id'] for a in zh['articles']] == [a['id'] for a in en['articles']]
 research = (root / 'en/research/index.html').read_text(encoding='utf-8')
 assert all(s in research for s in ('104,800', 'not realized savings', 'Morris Fan', 'not claimed', '1,113', '20 modeling samples'))
 english_cv = (root / 'en/cv/index.html').read_text(encoding='utf-8')
 assert all(s in english_cv for s in ('window.print()', '2026-08', 'RMB 2M+', 'estimated benefit', 'Executive MBA'))
 print('Bilingual routes, reciprocal switches, metadata, chronology and research attribution: PASS')
 
+# Professional article: front matter, both language versions, and cross-links
+article_routes = {
+    'zh-TW': 'blog/2026-10-15-factory-ai-data-foundation/index.html',
+    'en': 'blog/2026-10-15-factory-ai-data-foundation-en/index.html',
+}
+for lang, route in article_routes.items():
+    page = (root / route).read_text(encoding='utf-8')
+    assert f'lang="{lang}"' in page, route
+    assert ('工廠 AI' in page) or ('Factory AI' in page), route
+assert '2026-10-15-factory-ai-data-foundation-en' in (root / article_routes['zh-TW']).read_text(encoding='utf-8')
+assert '/blog/2026-10-15-factory-ai-data-foundation/' in (root / article_routes['en']).read_text(encoding='utf-8')
+for route in ('research/index.html', 'en/research/index.html', 'index.html', 'en/index.html',
+              'cv/index.html', 'en/cv/index.html', 'transformation/index.html', 'en/transformation/index.html'):
+    html = (root / route).read_text(encoding='utf-8')
+    assert 'factory-ai-data-foundation' in html, ('article not linked from', route)
+assert '2026-10-15' in (root / 'blog/index.html').read_text(encoding='utf-8')
+assert '2026-10-15' in (root / 'en/blog/index.html').read_text(encoding='utf-8')
+print('Professional article publication, bilingual cross-links and site-wide references: PASS')
+
 for route in ('blog/index.html', 'en/blog/index.html', 'blog/write/index.html', 'blog/2026-09-17-website-update/index.html'):
     html = (root / route).read_text(encoding='utf-8')
     assert 'Jason' in html, route
     assert 'Blog Post number' not in html, route
-assert '2026-09-17-website-update' in (root / 'blog/index.html').read_text(encoding='utf-8')
-assert '2026-09-17-website-update' in (root / 'en/blog/index.html').read_text(encoding='utf-8')
 assert (root / 'assets/js/journal-editor.js').exists()
 print('Blog lists, author form and journal route: PASS')

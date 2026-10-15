@@ -6,8 +6,9 @@
 <p class="executive-eyebrow">{{ cv.basics.label }}</p>
 <p>{{ cv.basics.summary }}</p>
 <nav class="executive-section-nav" aria-label="{{ labels.sections }}">
-  <a href="#experience">{{ labels.experience }}</a> · <a href="#research">{{ labels.research }}</a> · <a href="#awards">{{ labels.awards }}</a> · <a href="#education">{{ labels.education }}</a> · <a href="#skills">{{ labels.skills }}</a> · <a href="#languages">{{ labels.languages }}</a>
+  <a href="#experience">{{ labels.experience }}</a> · <a href="#articles">{{ labels.articles }}</a> · <a href="#research">{{ labels.research }}</a> · <a href="#awards">{{ labels.awards }}</a> · <a href="#education">{{ labels.education }}</a> · <a href="#skills">{{ labels.skills }}</a> · <a href="#languages">{{ labels.languages }}</a>
 </nav>
+{% include resume-articles.html %}
 <h2 id="experience">{{ labels.experience }}</h2>
 {% for work in cv.work %}
 <section class="executive-role">

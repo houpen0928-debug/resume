@@ -39,6 +39,24 @@ Driving AI on the shop floor is less about how strong the model is, and more abo
 
 If any of the four cannot be answered, that AI is not ready for the line. The real question a factory should ask is not "which model is strongest", but "which AI can plug into my line and explain why it judged this piece NG" — accurate is not enough; it must be explainable.
 
+## Professional Articles
+
+<nav class="executive-section-nav" aria-label="Professional articles">
+{% for article in site.data.cv_en.articles %}
+<a href="{{ article.url | relative_url }}">{{ article.name }}</a><br>
+{% endfor %}
+</nav>
+
+{% for article in site.data.cv_en.articles %}
+<section class="executive-role" id="{{ article.id }}">
+  <h2>{{ article.name }}</h2>
+  <p class="executive-date">{{ article.category }}</p>
+  <p><strong>{{ article.role }}</strong></p>
+  <p>{{ article.summary }}</p>
+  <p><a href="{{ article.url | relative_url }}">Read the full article</a>{% if article.also %} · <a href="{{ article.also | relative_url }}">{{ article.also_label }}</a>{% endif %}</p>
+</section>
+{% endfor %}
+
 ## Research Cases
 
 <nav class="executive-section-nav" aria-label="Research cases">

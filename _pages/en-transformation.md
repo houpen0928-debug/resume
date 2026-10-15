@@ -45,3 +45,7 @@ Contributed to **20%+ cumulative production cost reduction** over the career and
 
 ## Projects & Research Sources
 Explore [AI process cases, E-bike App planning and agentic workflow studies]({{ '/en/research/' | relative_url }}). Each case distinguishes personal participation, team validation, estimated benefits and reference studies.
+
+## Professional articles
+
+"[Factory AI Adoption: The Data Foundation Is the First Barrier — Using AI Itself to Tackle Legacy Equipment Protocol Challenges]({{ '/blog/2026-10-15-factory-ai-data-foundation-en/' | relative_url }})" (2026-10-15) — argues that the bottleneck is not the algorithm but the underlying data, and establishes the correct sequence of building the data foundation before deploying upper-layer AI.

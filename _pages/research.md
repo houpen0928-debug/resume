@@ -36,6 +36,24 @@ en_url: /en/research/
 
 四問任一答不出來，這個 AI 就還不能進產線。工廠真正該問的不是「哪個模型最強」，而是「哪個 AI 能接進我的產線，並且講清楚為什麼判這片是 NG」——判得準不夠，還要判得能解釋。
 
+## 專業文章
+
+<nav class="executive-section-nav" aria-label="專業文章">
+{% for article in site.data.cv.articles %}
+<a href="{{ article.url | relative_url }}">{{ article.name }}</a><br>
+{% endfor %}
+</nav>
+
+{% for article in site.data.cv.articles %}
+<section class="executive-role" id="{{ article.id }}">
+  <h2>{{ article.name }}</h2>
+  <p class="executive-date">{{ article.category }}</p>
+  <p><strong>{{ article.role }}</strong></p>
+  <p>{{ article.summary }}</p>
+  <p><a href="{{ article.url | relative_url }}">閱讀全文</a>{% if article.also %}　·　<a href="{{ article.also | relative_url }}">{{ article.also_label }}</a>{% endif %}</p>
+</section>
+{% endfor %}
+
 ## 研究案例
 
 <nav class="executive-section-nav" aria-label="研究案例">

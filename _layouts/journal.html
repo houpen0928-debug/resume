@@ -1,7 +1,7 @@
 ---
 layout: single
 ---
-<p class="executive-date">Jason Hung · {{ page.date | date: "%Y-%m-%d" }}</p>
+<p class="executive-date">Jason Hung · {{ page.date | date: "%Y-%m-%d" }}{% if page.lang == 'en' %} · English{% else %} · 繁體中文{% endif %}</p>
 {{ content }}
 {% if page.attachments %}
 <h2>{% if page.lang == 'en' %}Attachments{% else %}附件{% endif %}</h2>
