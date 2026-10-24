@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [master]
   push:
-    branches: [codex/resume-executive-0915]
+    branches: [master, codex/resume-executive-0915]
 permissions:
   contents: read
 jobs:
