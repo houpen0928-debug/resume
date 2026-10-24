@@ -117,7 +117,7 @@ assert '2026-10-15' in (root / 'blog/index.html').read_text(encoding='utf-8')
 assert '2026-10-15' in (root / 'en/blog/index.html').read_text(encoding='utf-8')
 print('Professional article publication, bilingual cross-links and site-wide references: PASS')
 
-for route in ('blog/index.html', 'en/blog/index.html', 'blog/write/index.html', 'blog/2026-09-17-website-update/index.html'):
+for route in ('blog/index.html', 'en/blog/index.html', 'blog/write/index.html', 'blog/2026-09-17-mu5nh2c4/index.html'):
     html = (root / route).read_text(encoding='utf-8')
     assert 'Jason' in html, route
     assert 'Blog Post number' not in html, route
