@@ -22,17 +22,16 @@ for route in routes + tuple('en/' + route for route in routes):
     parser.feed(html)
     for url in parser.urls:
         parsed = urlsplit(url)
-        if parsed.netloc and parsed.netloc != 'houpen0928-debug.github.io':
+        if parsed.netloc and parsed.netloc not in ('houpen0928-debug.github.io', 'jasonhung0928.win'):
             continue
         if parsed.scheme and parsed.scheme not in ('http', 'https'):
             continue
         path = unquote(parsed.path)
         if not path:
             continue
-        if path == '/resume':
-            path += '/'
-        assert path.startswith('/resume/'), (route, url)
-        local = root / path[len('/resume/'):]
+        # 站點部署於自訂網域根目錄（baseurl 為空），本地連結直接對應 _site 內路徑。
+        # 早期部署於 /resume/ 子路徑時需剝離該前綴，現已不再適用。
+        local = root / path.lstrip('/')
         assert local.exists(), (route, url)
 
 home = (root / 'index.html').read_text(encoding='utf-8')
