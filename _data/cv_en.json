@@ -139,7 +139,9 @@
         "Private Enterprise AI Agents",
         "LLM Applications & Training",
         "Engineering Knowledge & Patent Risk Management",
-        "IoT / Hardware–Software Integration"
+        "IoT / Hardware–Software Integration",
+        "Knowledge Assetization & Know-how Extraction",
+        "AI-Assisted Technical Review & Human–AI Division of Labour"
       ]
     },
     {
@@ -363,6 +365,46 @@
         }
       ],
       "source": "Morris Fan, The Practice and Challenges of Agentic Workflows, pages 4–13, 27–32, 73–82 and 84–91. Third-party study reference, not a personal publication."
+    },
+    {
+      "id": "expert-agent-knowledge-asset",
+      "name": "Expertizing Engineering Know-how & AI-Assisted Technical Review",
+      "category": "Knowledge Assetization | 2026",
+      "role": "Independently executed: know-how extraction, expert role definition, review process design, and human–AI division-of-labour validation",
+      "summary": "Converted 10+ years of embedded power and motor-control experience (commutation truth tables, protection criteria, CAN/J1939 protocol design) into a packageable, distributable professional expert role, so the know-how no longer leaves with the individual; validated against real firmware a division of labour where “AI runs the standardized first-pass review, humans own risk adjudication” — the first AI pass surfaced 3 safety-critical defects.",
+      "highlights": [
+        "Knowledge assetization: Extracted a decade of motor-control know-how (BMS protection thresholds, commutation truth tables, six-step to FOC migration paths, CAN and J1939 addressing practice) into a structured professional role covering four classes of executable rules — capability boundaries, workflow, output conventions and prohibited actions — deliverable to internal engineers or external advisors.",
+        "Portability of judgment: Converted heuristics that previously lived only in personal experience and code comments (e.g., “protection thresholds must never be adjusted ad hoc,” “measured results and inferences must be labelled separately”) into explicit rules, reducing dependence on specific individuals for knowledge transfer.",
+        "Human–AI division of labour, demonstrated: The AI independently surfaced 3 safety-critical and 1 high-risk defect in the first pass and built its own verification scripts covering bit-order comparison and field-vector derivation — reproducible, objective findings. Severity adjudication and solution trade-offs remained with the human, shifting senior effort from line-by-line checking to defining standards and final adjudication.",
+        "Quality discipline and risk closure: A finding counted as settled only when reproduced by two independent methods, with verification scripts required to parse parameters directly from source rather than by manual transcription — which caught one transcription misjudgement. Findings graded by personnel and line safety into safety-critical / high-risk / general recommendation, each mapped to an assignable, verifiable corrective action, with items requiring hardware confirmation explicitly flagged together with the test method."
+      ],
+      "details": [
+        {
+          "title": "Problem definition: turning experience into a portable asset",
+          "text": "The starting point is the familiar concentration of senior technical judgment in one person, which resists transfer. Critical decision criteria live in the mind and in code comments; new engineers accumulate them through repeated questions and trial and error, and once the holder leaves, the experience cannot be regenerated. Conventional remedies — documentation and training — struggle to carry conditional professional intuition of the form “under what conditions should this judgment be made, and under what conditions must it never be done this way,” nor do they trigger on demand at the point of work. The alternative pursued here was to rewrite experience as executable rules packaged into a role that is summoned actively in the work context."
+        },
+        {
+          "title": "Extraction method: converting judgment criteria into executable rules",
+          "text": "The substance of extraction is not enumerating technical terms, but four classes of executable rules: capability boundaries (which problems this role handles, and where the question must be handed back to a human); workflow (a fixed progression for any problem — establish boundaries, decompose layers, present option comparisons, then descend to parameter level); output conventions (conclusion first, comparison tables, parameters with units, risks annotated with their source); and prohibited actions (irreversible operations, personnel-safety thresholds, items that must be measured rather than inferred). Without all four, the role degrades into a question-answering bot rather than an asset that can carry judgment."
+        },
+        {
+          "title": "Division of labour: AI for standardized first-pass, humans for risk adjudication",
+          "text": "Real firmware was used as the acceptance target. The division was designed so the AI executes a complete first-pass review under predefined rules and produces reproducible, objective findings, while the human judges severity, confirms the corrective approach and holds final release. The outcome validated the design: the defects the AI surfaced were largely of types verifiable by mechanical comparison or mathematical derivation (the mapping mismatch confirmed by bit-order line-by-line comparison, the direction error confirmed by field-vector angle derivation), while severity adjudication and solution trade-offs still required human ownership. This also reduced senior-engineer time, shifting senior effort from line-by-line checking to defining standards and final adjudication."
+        },
+        {
+          "title": "Quality discipline: refusing single-source conclusions, mutual proof by two paths",
+          "text": "The most consequential practice established here is the rule that no single-source conclusion is accepted. Each technical finding had to be reproduced through two independent routes — line-by-line bit-order comparison and space field-vector angle derivation — and only agreement between them counted as settled. Verification scripts were also required to parse parameter tables directly from source code, with manual transcription prohibited; this actually caught a transcription error mid-exercise (an initial finding of 5 errors was corrected to 4 once parsed from source). The discipline aligns with established manufacturing quality practice: do not trust a single data point, confirm by reproducible method, and trace discrepancies to the root rather than adopting one side."
+        },
+        {
+          "title": "Risk grading and closure: making findings assignable",
+          "text": "All findings were graded into safety-critical, high-risk and general-recommendation tiers based on whether personnel or line safety was involved, each mapped to a concrete corrective action and verification method, with items requiring hardware confirmation explicitly flagged together with the test procedure. This grading lets technical review output feed directly into an existing defect-management process instead of stopping at a list of suggestions, so closure speed depends on execution rather than on re-translation."
+        },
+        {
+          "title": "Scope and next steps",
+          "text": "This is an individual implementation validated against the author’s own firmware projects; it has not yet been extended to parallel multi-project operation or cross-team reuse. Confirmed next directions include separating path- and environment-dependent private material from general reusable knowledge so the asset can operate in different environments; codifying mechanically repeatable checks (such as parameter-table versus document consistency) into automated checks that can be re-executed; and, once enough cases accumulate, evaluating whether this form of review expertise can be offered as external technical advisory work. All conclusions are personal measurement and analysis, not third-party verified."
+        }
+      ],
+      "source": "Personal implementation record (2026-10): role definition and review rules authored from scratch, validated against the author’s own embedded firmware projects; verification scripts and the review report can be re-executed to reproduce the conclusions."
     },
     {
       "id": "embedded-controller-dev",
