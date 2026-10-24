@@ -1,9 +1,20 @@
 """Check the built resume routes, content, photo, and project-site asset paths."""
+import re
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 
 root = Path('_site')
+
+def site_url():
+    """Read the canonical site URL from _config.yml so a domain change needs no edit here."""
+    text = Path('_config.yml').read_text(encoding='utf-8')
+    match = re.search(r'^url\s*:\s*[\'"]?(https?://[^\'"\s]+)', text, re.M)
+    assert match, 'cannot read url from _config.yml'
+    return match.group(1).rstrip('/')
+
+SITE_URL = site_url()
+
 class Links(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -22,7 +33,7 @@ for route in routes + tuple('en/' + route for route in routes):
     parser.feed(html)
     for url in parser.urls:
         parsed = urlsplit(url)
-        if parsed.netloc and parsed.netloc not in ('houpen0928-debug.github.io', 'jasonhung0928.win'):
+        if parsed.netloc and parsed.netloc not in (urlsplit(SITE_URL).netloc, 'houpen0928-debug.github.io'):
             continue
         if parsed.scheme and parsed.scheme not in ('http', 'https'):
             continue
@@ -64,7 +75,8 @@ class LanguageMarkup(HTMLParser):
 
 for route in routes:
     suffix = route.removesuffix('index.html')
-    expected = {'zh-TW': '/resume/' + suffix, 'en': '/resume/en/' + suffix}
+    # 站點部署於自訂網域根目錄（baseurl 為空），語言切換連結為根路徑。
+    expected = {'zh-TW': '/' + suffix, 'en': '/en/' + suffix}
     for prefix, language in [('', 'zh-TW'), ('en/', 'en')]:
         parser = LanguageMarkup()
         parser.feed((root / (prefix + route)).read_text(encoding='utf-8'))
@@ -72,7 +84,7 @@ for route in routes:
         assert {a['hreflang']: a['href'] for a in parser.switches} == expected
         assert [a['hreflang'] for a in parser.switches if a.get('aria-current') == 'page'] == [language]
         for lang, url in expected.items():
-            assert parser.alternates[lang] == 'https://houpen0928-debug.github.io' + url
+            assert parser.alternates[lang] == SITE_URL + url, (route, lang, parser.alternates.get(lang))
 
 import json
 zh = json.loads(Path('_data/cv.json').read_text(encoding='utf-8'))
