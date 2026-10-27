@@ -271,6 +271,19 @@
       "details": []
     },
     {
+      "id": "pickmy-order-saas",
+      "name": "LINE Scan-to-Order SaaS (PickMy Order)",
+      "category": "Independent Build | 2026",
+      "role": "Product definition, system architecture, and development lead",
+      "summary": "A LINE scan-to-order and light-membership SaaS for offline stores, built around scan-to-order, loyalty points, and prepaid service cards — driven independently from product definition and full-stack development through automated testing (described generically; no project-specific details).",
+      "highlights": [
+        "Light membership system: scan-to-order + points + prepaid service cards closed loop, with 197 automated regression tests; every release fully verified before deployment.",
+        "Production scheduling optimization: defined customer wait time, one-trip fulfillment rate, and capacity utilization as the objective function, and built a re-runnable evaluation harness (fixed random seed) to quantitatively compare candidate algorithms — reproducible and regression-safe conclusions.",
+        "Manufacturing methodology transferred: applied daily/weekly review cadence and quality-engineering thinking from mass production to SaaS iteration and requirements management."
+      ],
+      "details": []
+    },
+    {
       "id": "platform-build-experience",
       "name": "0→1 Digital Platform Build & Launch",
       "category": "Independent Build | 2026",
