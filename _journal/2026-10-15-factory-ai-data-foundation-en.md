@@ -13,6 +13,8 @@ description: "Most enterprises prioritize upper-layer AI applications such as AI
 
 Factory AI transformation is an inevitable trend in manufacturing. Most enterprises prioritize upper-layer AI applications such as AI Agents, intelligent scheduling and quality prediction. However, numerous projects stall mid-way. The real bottleneck is not AI algorithms, but the **collection of high-quality underlying data**.
 
+![Isometric cutaway illustration: on the left, an aging industrial machine tangled with unlabeled cables, a green edge-computing board clamped to its side sniffing network packets; cyan data particles rise and consolidate into a stable glowing data pillar, topped by a platform where golden AI application modules — robot arm, monitoring dashboard, scheduling grid, neural network — sit securely. On the right, a contrasting structure with a cracked, crumbling foundation and tilting, falling modules — when the data foundation fails, everything above it collapses.]({{ '/images/journal/factory-ai-data-foundation-2026-10-15.jpg' | relative_url }})
+
 ## The Data and Protocol Barrier Predates AI
 
 This data and protocol barrier existed long before AI. It was already plaguing factories during the Industry 4.0 digitalization wave. Production lines consist of mixed-generation machines with closed, proprietary and often undocumented communication protocols.
