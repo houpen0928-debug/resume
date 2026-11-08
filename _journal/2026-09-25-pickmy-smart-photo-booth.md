@@ -1,5 +1,7 @@
 ---
 layout: "journal"
+redirect_from:
+  - "/blog/2026-09-25-pickmy（選我拍貼）​-是一台智慧拍貼機（大頭貼機）專案/"
 title: "PickMy（選我拍貼）是一台智慧拍貼機（大頭貼機）專案"
 date: 2026-09-25
 lang: "zh-TW"
