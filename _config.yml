@@ -251,6 +251,15 @@ defaults:
       comments: true
       share: true
       related: true
+  # _journal（※ 必須保留這一段：缺 layout 會輸出不含 <head> 的裸片段，
+  # 瀏覽器按系統預設編碼猜 → 中文全部變亂碼。2026-11-08 踩過）
+  - scope:
+      path: ""
+      type: journal
+    values:
+      layout: journal
+      author_profile: true
+      resume_style: true
   # _pages
   - scope:
       path: ""
