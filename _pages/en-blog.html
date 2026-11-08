@@ -11,9 +11,9 @@ en_url: /en/blog/
 author: jason_en
 site_title: "Jason Hung | Plant Operations"
 ---
-<p>Notes on manufacturing leadership, AI applications and ongoing learning. Posts are shown in their original language.</p>
+<p>Notes on manufacturing leadership, AI applications and ongoing learning. This page lists English posts only; Chinese posts are on the <a href="{{ "/blog/" | relative_url }}">中文部落格</a>.</p>
 <p><a class="btn" href="{{ "/blog/write/" | relative_url }}">Write a post · Jason</a></p>
-{% assign entries = site.journal | sort: "date" | reverse %}
+{% assign entries = site.journal | where_exp: "item", "item.lang == 'en'" | sort: "date" | reverse %}
 {% for entry in entries %}
 <article class="executive-role">
 <h2><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></h2>

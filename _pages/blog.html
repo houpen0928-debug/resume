@@ -9,9 +9,9 @@ resume_style: true
 zh_url: /blog/
 en_url: /en/blog/
 ---
-<p>記錄製造管理、AI 應用與持續學習。文章依原文語言呈現。</p>
+<p>記錄製造管理、AI 應用與持續學習。此頁僅收錄中文文章，英文文章請見 <a href="{{ "/en/blog/" | relative_url }}">English blog</a>。</p>
 <p><a class="btn" href="{{ "/blog/write/" | relative_url }}">撰寫日誌 · Jason</a></p>
-{% assign entries = site.journal | sort: "date" | reverse %}
+{% assign entries = site.journal | where_exp: "item", "item.lang != 'en'" | sort: "date" | reverse %}
 {% for entry in entries %}
 <article class="executive-role">
 <h2><a href="{{ entry.url | relative_url }}">{{ entry.title | escape }}</a></h2>
