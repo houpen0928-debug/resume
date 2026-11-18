@@ -15,6 +15,8 @@ One Excel file dropped into a WeChat group every day, titled "11/17 Quality Anom
 
 This is not because the shop floor is careless. It is because **the second layer of the system is missing**.
 
+![Concept diagram: the blue upper band is Layer 1 MES, with four boxes — INCOMING → MANUFACTURING → INSPECTION → SHIPMENT — in a one-way line ending at a red dot labelled "RECORD ENDS: ends at shipment"; two grey arrows lead down into the orange Layer 2 quality system, whose five boxes DETECT → TRACE → HANDLE → ANALYZE → DESIGN REC. run left to right, with a feedback arc from DESIGN REC. back to DETECT closing the loop, labelled "Design feedback → specs · process parameters · inspection standards → the next lot"; the closing line reads "MES governs this lot. A quality system governs the next one."]({{ '/images/journal/mes-vs-quality-loop-2026-11-18-en.jpg' | relative_url }})
+
 ## 1. The Order of Internal Control Systems: MES Always Comes First
 
 Open any MES architecture diagram on the market and the stack is drawn the same way, bottom to top: incoming material, warehouse, work orders, stations, equipment, operators, WIP, finished goods, shipment. Its core is **tracking things** — where a lot came from, which station it is at now, who ran it, under which parameters, and which customer it shipped to.
